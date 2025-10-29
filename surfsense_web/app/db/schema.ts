@@ -7,3 +7,5 @@ export const usersTable = pgTable("users", {
 	company: varchar({ length: 255 }).notNull(),
 	message: text().default(""),
 });
+
+

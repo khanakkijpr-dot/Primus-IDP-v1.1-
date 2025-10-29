@@ -462,3 +462,4 @@ async def index_airtable_records(
         )
         logger.error(f"Error during Airtable indexing: {e!s}", exc_info=True)
         return 0, f"Failed to index Airtable records: {e!s}"
+

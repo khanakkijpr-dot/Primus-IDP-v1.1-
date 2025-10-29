@@ -20,7 +20,7 @@ export function useChatState({ chat_id }: UseChatStateProps) {
 	const [selectedDocuments, setSelectedDocuments] = useState<Document[]>([]);
 
 	useEffect(() => {
-		const bearerToken = localStorage.getItem("surfsense_bearer_token");
+		const bearerToken = localStorage.getItem("primus_idp_bearer_token");
 		setToken(bearerToken);
 	}, []);
 
@@ -175,3 +175,6 @@ export function useChatAPI({ token, search_space_id }: UseChatAPIProps) {
 		updateChat,
 	};
 }
+
+
+

@@ -55,7 +55,7 @@ export default function GoogleGmailConnectorPage() {
 				{
 					method: "GET",
 					headers: {
-						Authorization: `Bearer ${localStorage.getItem("surfsense_bearer_token")}`,
+						Authorization: `Bearer ${localStorage.getItem("primus_idp_bearer_token")}`,
 					},
 				}
 			);
@@ -198,3 +198,4 @@ export default function GoogleGmailConnectorPage() {
 		</div>
 	);
 }
+

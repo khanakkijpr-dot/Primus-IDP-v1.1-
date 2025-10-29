@@ -98,3 +98,4 @@ class STTService:
 
 # Global STT service instance
 stt_service = STTService()
+

@@ -18,3 +18,4 @@ class ChunkUpdate(ChunkBase):
 
 class ChunkRead(ChunkBase, IDModel, TimestampModel):
     model_config = ConfigDict(from_attributes=True)
+

@@ -1,5 +1,5 @@
 """
-Validation utilities for SurfSense backend.
+Validation utilities for Primus IDP backend.
 
 This module contains validation functions that were previously scattered across
 different modules. It leverages the pyvalidators library where applicable
@@ -535,3 +535,4 @@ def validate_connector_config(
                 raise ValueError(f"{key} cannot be empty")
 
     return config
+

@@ -491,3 +491,4 @@ async def index_luma_events(
         )
         logger.error(f"Failed to index Luma events: {e!s}", exc_info=True)
         return 0, f"Failed to index Luma events: {e!s}"
+

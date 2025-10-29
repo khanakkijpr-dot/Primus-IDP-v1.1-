@@ -357,3 +357,4 @@ async def update_user_llm_preferences(
         raise HTTPException(
             status_code=500, detail=f"Failed to update LLM preferences: {e!s}"
         ) from e
+

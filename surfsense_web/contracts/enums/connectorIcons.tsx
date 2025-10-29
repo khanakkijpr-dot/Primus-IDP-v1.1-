@@ -78,3 +78,5 @@ export const getConnectorIcon = (connectorType: EnumConnectorName | string, clas
 			return <Search {...iconProps} />;
 	}
 };
+
+

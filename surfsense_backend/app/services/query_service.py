@@ -114,3 +114,4 @@ class QueryService:
 
         chat_history_str += "</chat_history>"
         return chat_history_str
+

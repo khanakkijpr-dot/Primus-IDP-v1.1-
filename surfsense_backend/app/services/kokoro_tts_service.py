@@ -136,3 +136,4 @@ async def get_kokoro_tts_service(lang_code: str = "a") -> KokoroTTSService:
         _kokoro_service = KokoroTTSService(lang_code=lang_code)
 
     return _kokoro_service
+

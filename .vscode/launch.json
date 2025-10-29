@@ -21,17 +21,17 @@
             ],
             "console": "integratedTerminal",
             "justMyCode": false,
-            "cwd": "${workspaceFolder}/surfsense_backend",
+            "cwd": "${workspaceFolder}/primus_idp_backend",
             "python": "${command:python.interpreterPath}"
         },
         {
             "name": "Python Debugger: main.py (direct)",
             "type": "debugpy",
             "request": "launch",
-            "program": "${workspaceFolder}/surfsense_backend/main.py",
+            "program": "${workspaceFolder}/primus_idp_backend/main.py",
             "console": "integratedTerminal",
             "justMyCode": false,
-            "cwd": "${workspaceFolder}/surfsense_backend"
+            "cwd": "${workspaceFolder}/primus_idp_backend"
         }
     ]
 }

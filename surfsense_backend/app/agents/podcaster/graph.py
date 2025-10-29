@@ -20,10 +20,11 @@ def build_graph():
 
     # Compile the workflow into an executable graph
     graph = workflow.compile()
-    graph.name = "Surfsense Podcaster"  # This defines the custom name in LangSmith
+    graph.name = "Primus IDP Podcaster"  # This defines the custom name in LangSmith
 
     return graph
 
 
 # Compile the graph once when the module is loaded
 graph = build_graph()
+

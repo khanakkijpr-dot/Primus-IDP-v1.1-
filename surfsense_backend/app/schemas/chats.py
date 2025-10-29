@@ -60,3 +60,4 @@ class ChatRead(ChatBase, IDModel, TimestampModel):
 
 class ChatReadWithoutMessages(ChatBaseWithoutMessages, IDModel, TimestampModel):
     model_config = ConfigDict(from_attributes=True)
+

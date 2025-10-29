@@ -404,3 +404,4 @@ class GoogleGmailConnector:
 
         except Exception as e:
             return f"Error formatting message to markdown: {e!s}"
+

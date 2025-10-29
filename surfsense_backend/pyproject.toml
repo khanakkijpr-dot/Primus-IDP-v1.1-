@@ -1,7 +1,7 @@
 [project]
 name = "surf-new-backend"
 version = "0.0.8"
-description = "SurfSense Backend"
+description = "Primus IDP Backend"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
@@ -143,3 +143,4 @@ line-ending = "auto"
 known-first-party = ["app"]
 force-single-line = false
 combine-as-imports = true
+

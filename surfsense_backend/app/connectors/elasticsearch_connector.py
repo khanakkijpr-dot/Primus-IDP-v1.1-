@@ -1,5 +1,5 @@
 """
-Elasticsearch connector for SurfSense
+Elasticsearch connector for Primus IDP
 """
 
 import logging
@@ -262,3 +262,4 @@ class ElasticsearchConnector:
         """Close the Elasticsearch client connection"""
         if hasattr(self, "client"):
             await self.client.close()
+

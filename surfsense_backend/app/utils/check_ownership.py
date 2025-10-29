@@ -17,3 +17,4 @@ async def check_ownership(session: AsyncSession, model, item_id: int, user: User
             detail="Item not found or you don't have permission to access it",
         )
     return item
+

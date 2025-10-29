@@ -45,8 +45,10 @@ const demoPlans = [
 
 function PricingBasic() {
 	return (
-		<Pricing plans={demoPlans} title="SurfSense Pricing" description="Choose that works for you" />
+		<Pricing plans={demoPlans} title="Primus IDP Pricing" description="Choose that works for you" />
 	);
 }
 
 export default PricingBasic;
+
+

@@ -209,3 +209,5 @@ const SUPPORTED_LANGUAGES = [
 export const languageRenderers: Record<string, LanguageRenderer> = Object.fromEntries(
 	SUPPORTED_LANGUAGES.map((lang) => [lang, createLanguageRenderer(lang)])
 );
+
+

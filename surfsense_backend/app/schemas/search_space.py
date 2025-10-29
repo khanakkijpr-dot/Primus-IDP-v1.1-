@@ -25,3 +25,4 @@ class SearchSpaceRead(SearchSpaceBase, IDModel, TimestampModel):
     user_id: uuid.UUID
 
     model_config = ConfigDict(from_attributes=True)
+

@@ -19,3 +19,4 @@ workflow.add_edge("write_sub_section", "__end__")
 # Compile the workflow into an executable graph
 graph = workflow.compile()
 graph.name = "Sub Section Writer"  # This defines the custom name in LangSmith
+

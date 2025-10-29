@@ -1,8 +1,8 @@
 {
-	"name": "surfsense_web",
+	"name": "Primus IDP_web",
 	"version": "0.0.8",
 	"private": true,
-	"description": "SurfSense Frontend",
+	"description": "Primus IDP Frontend",
 	"scripts": {
 		"dev": "next dev --turbopack",
 		"dev:turbo": "next dev --turbopack",
@@ -104,3 +104,4 @@
 		"typescript": "^5.8.3"
 	}
 }
+

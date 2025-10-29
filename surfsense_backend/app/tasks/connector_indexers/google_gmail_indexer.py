@@ -384,3 +384,4 @@ async def index_google_gmail_messages(
         )
         logger.error(f"Failed to index Google gmail emails: {e!s}", exc_info=True)
         return 0, f"Failed to index Google gmail emails: {e!s}"
+

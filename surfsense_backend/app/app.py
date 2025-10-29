@@ -76,6 +76,11 @@ if config.AUTH_TYPE == "GOOGLE":
         ],  # blocks OAuth registration when disabled
     )
 
+# Include auth routes under /api/v1 for frontend compatibility
+app.include_router(
+    fastapi_users.get_auth_router(auth_backend), prefix="/api/v1/auth/jwt", tags=["auth"]
+)
+app.include_router(fastapi_users.get_users_router(UserRead, UserUpdate), prefix="/api/v1/users", tags=["users"])
 app.include_router(crud_router, prefix="/api/v1", tags=["crud"])
 
 
@@ -85,3 +90,4 @@ async def authenticated_route(
     session: AsyncSession = Depends(get_async_session),
 ):
     return {"message": "Token is valid"}
+

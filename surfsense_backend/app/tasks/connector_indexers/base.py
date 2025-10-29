@@ -222,3 +222,4 @@ def build_document_metadata_markdown(
         document_parts.pop()
 
     return "\n".join(document_parts)
+

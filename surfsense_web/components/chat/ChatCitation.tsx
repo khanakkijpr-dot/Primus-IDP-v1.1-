@@ -28,3 +28,5 @@ export const CitationDisplay: React.FC<{ index: number; node: any }> = ({ index,
 		</SourceDetailSheet>
 	);
 };
+
+

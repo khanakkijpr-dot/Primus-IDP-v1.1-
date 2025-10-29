@@ -174,7 +174,7 @@ export function useConnectorEditPage(connectorId: number, searchSpaceId: string)
 			setIsFetchingRepos(true);
 			setFetchedRepos(null);
 			try {
-				const token = localStorage.getItem("surfsense_bearer_token");
+				const token = localStorage.getItem("primus_idp_bearer_token");
 				if (!token) throw new Error("No auth token");
 				const response = await fetch(
 					`${process.env.NEXT_PUBLIC_FASTAPI_BACKEND_URL}/api/v1/github/repositories/`,
@@ -613,3 +613,6 @@ export function useConnectorEditPage(connectorId: number, searchSpaceId: string)
 		handleRepoSelectionChange,
 	};
 }
+
+
+

@@ -403,3 +403,4 @@ async def index_clickup_tasks(
         )
         logger.error(f"Failed to index ClickUp tasks: {e!s}", exc_info=True)
         return 0, f"Failed to index ClickUp tasks: {e!s}"
+

@@ -219,7 +219,7 @@ export const AppSidebar = memo(function AppSidebar({
 									<Logo className="rounded-lg" />
 								</div>
 								<div className="grid flex-1 text-left text-sm leading-tight">
-									<span className="truncate font-medium">SurfSense</span>
+									<span className="truncate font-medium">Primus IDP</span>
 									<span className="truncate text-xs">beta v0.0.8</span>
 								</div>
 							</div>
@@ -243,3 +243,5 @@ export const AppSidebar = memo(function AppSidebar({
 		</Sidebar>
 	);
 });
+
+

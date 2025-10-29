@@ -527,3 +527,4 @@ async def index_discord_messages(
         )
         logger.error(f"Failed to index Discord messages: {e!s}", exc_info=True)
         return 0, f"Failed to index Discord messages: {e!s}"
+

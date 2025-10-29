@@ -18,4 +18,5 @@ workflow.add_edge("answer_question", "__end__")
 
 # Compile the workflow into an executable graph
 graph = workflow.compile()
-graph.name = "SurfSense QnA Agent"  # This defines the custom name in LangSmith
+graph.name = "Primus IDP QnA Agent"  # This defines the custom name in LangSmith
+

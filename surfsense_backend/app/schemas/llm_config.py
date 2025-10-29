@@ -66,3 +66,4 @@ class LLMConfigRead(LLMConfigBase, IDModel, TimestampModel):
     search_space_id: int
 
     model_config = ConfigDict(from_attributes=True)
+

@@ -434,3 +434,4 @@ async def index_github_repos(
 
     error_message = "; ".join(errors) if errors else None
     return documents_processed, error_message
+

@@ -345,3 +345,4 @@ def generate_unique_identifier_hash(
     combined_data = f"{document_type.value}:{identifier_str}:{search_space_id}"
 
     return hashlib.sha256(combined_data.encode("utf-8")).hexdigest()
+

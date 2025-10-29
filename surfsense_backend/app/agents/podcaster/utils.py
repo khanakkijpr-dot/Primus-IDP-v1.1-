@@ -71,3 +71,4 @@ def get_voice_for_provider(provider: str, speaker_id: int) -> dict | str:
             1: {},
         }
         return default_voices.get(speaker_id, default_voices[0])
+

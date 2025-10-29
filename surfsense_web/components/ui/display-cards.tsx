@@ -68,3 +68,5 @@ export default function DisplayCards({ cards }: DisplayCardsProps) {
 		</div>
 	);
 }
+
+

@@ -104,3 +104,4 @@ SUMMARY_PROMPT = (
 SUMMARY_PROMPT_TEMPLATE = PromptTemplate(
     input_variables=["document"], template=SUMMARY_PROMPT
 )
+

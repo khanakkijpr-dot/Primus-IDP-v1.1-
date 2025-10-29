@@ -79,3 +79,5 @@ export const scrollTabsRight = (
 		setTimeout(updateIndicators, 300);
 	}
 };
+
+

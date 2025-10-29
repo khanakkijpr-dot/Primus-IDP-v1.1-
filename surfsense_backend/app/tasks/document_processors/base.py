@@ -53,3 +53,4 @@ async def check_document_by_unique_identifier(
         .where(Document.unique_identifier_hash == unique_identifier_hash)
     )
     return existing_doc_result.scalars().first()
+

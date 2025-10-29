@@ -293,3 +293,4 @@ async def add_crawled_url_document(
             {"error_type": type(e).__name__},
         )
         raise RuntimeError(f"Failed to crawl URL: {e!s}") from e
+

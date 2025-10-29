@@ -15,9 +15,11 @@ export default function AuthCallbackPage() {
 				<TokenHandler
 					redirectPath="/dashboard"
 					tokenParamName="token"
-					storageKey="surfsense_bearer_token"
+					storageKey="primus_idp_bearer_token"
 				/>
 			</Suspense>
 		</div>
 	);
 }
+
+

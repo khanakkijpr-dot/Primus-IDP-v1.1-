@@ -188,3 +188,5 @@ export function NavProjects({ chats }: { chats: ChatItem[] }) {
 		</SidebarGroup>
 	);
 }
+
+

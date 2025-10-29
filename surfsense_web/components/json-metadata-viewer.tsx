@@ -56,3 +56,5 @@ export function JsonMetadataViewer({ title, metadata, trigger }: JsonMetadataVie
 		</Dialog>
 	);
 }
+
+

@@ -41,8 +41,11 @@ export function LocalLoginForm() {
 			formData.append("password", password);
 			formData.append("grant_type", "password");
 
+			const loginUrl = `${process.env.NEXT_PUBLIC_FASTAPI_BACKEND_URL}/auth/jwt/login`;
+			console.log("Attempting login via", loginUrl);
+
 			const response = await fetch(
-				`${process.env.NEXT_PUBLIC_FASTAPI_BACKEND_URL}/auth/jwt/login`,
+				loginUrl,
 				{
 					method: "POST",
 					headers: {
@@ -70,6 +73,7 @@ export function LocalLoginForm() {
 				router.push(`/auth/callback?token=${data.access_token}`);
 			}, 500);
 		} catch (err) {
+			console.error("Login request failed", err);
 			// Use auth-errors utility to get proper error details
 			let errorCode = "UNKNOWN_ERROR";
 
@@ -251,3 +255,5 @@ export function LocalLoginForm() {
 		</div>
 	);
 }
+
+

@@ -14,7 +14,7 @@ export async function fetchWithAuth(url: string, options: RequestInit = {}): Pro
 	}
 
 	// Get token from localStorage
-	const token = localStorage.getItem("surfsense_bearer_token");
+	const token = localStorage.getItem("primus_idp_bearer_token");
 
 	// Add authorization header if token exists
 	const headers = {
@@ -34,7 +34,7 @@ export async function fetchWithAuth(url: string, options: RequestInit = {}): Pro
 		toast.error("Session expired. Please log in again.");
 
 		// Clear token
-		localStorage.removeItem("surfsense_bearer_token");
+		localStorage.removeItem("primus_idp_bearer_token");
 
 		// Redirect to home page
 		window.location.href = "/";
@@ -168,3 +168,5 @@ export const apiClient = {
 		return response.json();
 	},
 };
+
+

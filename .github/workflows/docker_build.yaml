@@ -152,17 +152,17 @@ jobs:
   #       id: meta
   #       uses: docker/metadata-action@v5
   #       with:
-  #         images: ghcr.io/${{ github.repository_owner }}/surfsense_backend
+  #         images: ghcr.io/${{ github.repository_owner }}/primus_idp_backend
   #         tags: |
   #           # Use the tag generated in the previous job
   #           type=raw,value=${{ needs.tag_release.outputs.new_tag }}
   #           # Optionally add 'latest' tag if building from the default branch
   #           type=raw,value=latest,enable=${{ github.ref == format('refs/heads/{0}', github.event.repository.default_branch) || github.event.inputs.branch == github.event.repository.default_branch }}
 
-  #     - name: Build and push surfsense backend
+  #     - name: Build and push primus_idp backend
   #       uses: docker/build-push-action@v5
   #       with:
-  #         context: ./surfsense_backend
+  #         context: ./primus_idp_backend
   #         push: true
   #         tags: ${{ steps.meta.outputs.tags }}
   #         labels: ${{ steps.meta.outputs.labels }}
@@ -199,17 +199,17 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ghcr.io/${{ github.repository_owner }}/surfsense_ui
+          images: ghcr.io/${{ github.repository_owner }}/primus_idp_ui
           tags: |
             # Use the tag generated in the previous job
             type=raw,value=${{ needs.tag_release.outputs.new_tag }}
             # Optionally add 'latest' tag if building from the default branch
             type=raw,value=latest,enable=${{ github.ref == format('refs/heads/{0}', github.event.repository.default_branch) || github.event.inputs.branch == github.event.repository.default_branch }}
 
-      - name: Build and push surfsense UI image
+      - name: Build and push primus_idp UI image
         uses: docker/build-push-action@v5
         with:
-          context: ./surfsense_web
+          context: ./primus_idp_web
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
@@ -217,3 +217,4 @@ jobs:
           # Optional: Add build cache for faster builds
           cache-from: type=gha
           cache-to: type=gha,mode=max
+

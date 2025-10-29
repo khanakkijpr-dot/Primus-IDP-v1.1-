@@ -19,7 +19,7 @@ interface TokenHandlerProps {
 const TokenHandler = ({
 	redirectPath = "/",
 	tokenParamName = "token",
-	storageKey = "surfsense_bearer_token",
+	storageKey = "primus_idp_bearer_token",
 }: TokenHandlerProps) => {
 	const router = useRouter();
 	const searchParams = useSearchParams();
@@ -53,3 +53,5 @@ const TokenHandler = ({
 };
 
 export default TokenHandler;
+
+

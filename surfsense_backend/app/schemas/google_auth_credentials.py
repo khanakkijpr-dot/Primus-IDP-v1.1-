@@ -16,3 +16,4 @@ class GoogleAuthCredentialsBase(BaseModel):
     def expired(self) -> bool:
         """Check if the credentials have expired."""
         return self.expiry <= datetime.now(UTC)
+

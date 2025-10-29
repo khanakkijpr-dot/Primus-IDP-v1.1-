@@ -16,11 +16,11 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-	title: "SurfSense – Customizable AI Research & Knowledge Management Assistant",
+	title: "Primus IDP – Customizable AI Research & Knowledge Management Assistant",
 	description:
-		"SurfSense is an AI-powered research assistant that integrates with tools like Notion, GitHub, Slack, and more to help you efficiently manage, search, and chat with your documents. Generate podcasts, perform hybrid search, and unlock insights from your knowledge base.",
+		"Primus IDP is an AI-powered research assistant that integrates with tools like Notion, GitHub, Slack, and more to help you efficiently manage, search, and chat with your documents. Generate podcasts, perform hybrid search, and unlock insights from your knowledge base.",
 	keywords: [
-		"SurfSense",
+		"Primus IDP",
 		"AI research assistant",
 		"AI knowledge management",
 		"AI document assistant",
@@ -45,35 +45,35 @@ export const metadata: Metadata = {
 		"AI-powered search assistant",
 	],
 	openGraph: {
-		title: "SurfSense – AI Research & Knowledge Management Assistant",
+		title: "Primus IDP – AI Research & Knowledge Management Assistant",
 		description:
-			"Connect your documents and tools like Notion, Slack, GitHub, and more to your private AI assistant. SurfSense offers powerful search, document chat, podcast generation, and RAG APIs to enhance your workflow.",
-		url: "https://surfsense.net",
-		siteName: "SurfSense",
+			"Connect your documents and tools like Notion, Slack, GitHub, and more to your private AI assistant. Primus IDP offers powerful search, document chat, podcast generation, and RAG APIs to enhance your workflow.",
+		url: "https://Primus IDP.net",
+		siteName: "Primus IDP",
 		type: "website",
 		images: [
 			{
-				url: "https://surfsense.net/og-image.png",
+				url: "https://Primus IDP.net/og-image.png",
 				width: 1200,
 				height: 630,
-				alt: "SurfSense AI Research Assistant",
+				alt: "Primus IDP AI Research Assistant",
 			},
 		],
 		locale: "en_US",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "SurfSense – AI Assistant for Research & Knowledge Management",
+		title: "Primus IDP – AI Assistant for Research & Knowledge Management",
 		description:
-			"Have your own NotebookLM or Perplexity, but better. SurfSense connects external tools, allows chat with your documents, and generates fast, high-quality podcasts.",
-		creator: "https://surfsense.net",
-		site: "https://surfsense.net",
+			"Have your own NotebookLM or Perplexity, but better. Primus IDP connects external tools, allows chat with your documents, and generates fast, high-quality podcasts.",
+		creator: "https://Primus IDP.net",
+		site: "https://Primus IDP.net",
 		images: [
 			{
-				url: "https://surfsense.net/og-image-twitter.png",
+				url: "https://Primus IDP.net/og-image-twitter.png",
 				width: 1200,
 				height: 630,
-				alt: "SurfSense AI Assistant Preview",
+				alt: "Primus IDP AI Assistant Preview",
 			},
 		],
 	},
@@ -109,3 +109,5 @@ export default function RootLayout({
 		</html>
 	);
 }
+
+

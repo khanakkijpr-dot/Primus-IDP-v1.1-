@@ -9,11 +9,11 @@
 </div>
 
 
-# SurfSense
-While tools like NotebookLM and Perplexity are impressive and highly effective for conducting research on any topic/query, SurfSense elevates this capability by integrating with your personal knowledge base. It is a highly customizable AI research agent, connected to external sources such as Search Engines (SearxNG, Tavily, LinkUp), Slack, Linear, Jira, ClickUp, Confluence, Gmail, Notion, YouTube, GitHub, Discord, Airtable, Google Calendar, Luma, Elasticsearch and more to come.
+# Primus IDP
+While tools like NotebookLM and Perplexity are impressive and highly effective for conducting research on any topic/query, Primus IDP elevates this capability by integrating with your personal knowledge base. It is a highly customizable AI research agent, connected to external sources such as Search Engines (SearxNG, Tavily, LinkUp), Slack, Linear, Jira, ClickUp, Confluence, Gmail, Notion, YouTube, GitHub, Discord, Airtable, Google Calendar, Luma, Elasticsearch and more to come.
 
 <div align="center">
-<a href="https://trendshift.io/repositories/13606" target="_blank"><img src="https://trendshift.io/api/badge/repositories/13606" alt="MODSetter%2FSurfSense | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
+<a href="https://trendshift.io/repositories/13606" target="_blank"><img src="https://trendshift.io/api/badge/repositories/13606" alt="MODSetter%2FPrimusIDP | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
 </div>
 
 
@@ -117,7 +117,7 @@ Open source and easy to deploy locally.
 **Unstructured**: `.eml`, `.msg`, `.p7s`
 
 ### 🔖 Cross Browser Extension
-- The SurfSense extension can be used to save any webpage you like.
+- The Primus IDP extension can be used to save any webpage you like.
 - Its main usecase is to save any webpages protected beyond authentication.
 
 
@@ -125,35 +125,35 @@ Open source and easy to deploy locally.
 ## FEATURE REQUESTS AND FUTURE
 
 
-**SurfSense is actively being developed.** While it's not yet production-ready, you can help us speed up the process.
+**Primus IDP is actively being developed.** While it's not yet production-ready, you can help us speed up the process.
 
-Join the [SurfSense Discord](https://discord.gg/ejRNvftDp9) and help shape the future of SurfSense!
+Join the [Primus IDP Discord](https://discord.gg/ejRNvftDp9) and help shape the future of Primus IDP!
 
 ## 🚀 Roadmap
 
 Stay up to date with our development progress and upcoming features!  
 Check out our public roadmap and contribute your ideas or feedback:
 
-**View the Roadmap:** [SurfSense Roadmap on GitHub Projects](https://github.com/users/MODSetter/projects/2)
+**View the Roadmap:** [Primus IDP Roadmap on GitHub Projects](https://github.com/users/MODSetter/projects/2)
 
 
 ## How to get started?
 
 ### Installation Options
 
-SurfSense provides two installation methods:
+Primus IDP provides two installation methods:
 
-1. **[Docker Installation](https://www.surfsense.net/docs/docker-installation)** - The easiest way to get SurfSense up and running with all dependencies containerized.
+1. **[Docker Installation](https://www.Primus IDP.net/docs/docker-installation)** - The easiest way to get Primus IDP up and running with all dependencies containerized.
    - Includes pgAdmin for database management through a web UI
    - Supports environment variable customization via `.env` file
    - Flexible deployment options (full stack or core services only)
    - No need to manually edit configuration files between environments
 
-2. **[Manual Installation (Recommended)](https://www.surfsense.net/docs/manual-installation)** - For users who prefer more control over their setup or need to customize their deployment.
+2. **[Manual Installation (Recommended)](https://www.Primus IDP.net/docs/manual-installation)** - For users who prefer more control over their setup or need to customize their deployment.
 
 Both installation guides include detailed OS-specific instructions for Windows, macOS, and Linux.
 
-Before installation, make sure to complete the [prerequisite setup steps](https://www.surfsense.net/docs/) including:
+Before installation, make sure to complete the [prerequisite setup steps](https://www.Primus IDP.net/docs/) including:
 - Auth setup
 - **File Processing ETL Service** (choose one):
   - Unstructured.io API key (supports 34+ formats)
@@ -283,11 +283,11 @@ For detailed contribution guidelines, please see our [CONTRIBUTING.md](CONTRIBUT
 
 ## Star History
 
-<a href="https://www.star-history.com/#MODSetter/SurfSense&Date">
+<a href="https://www.star-history.com/#MODSetter/Primus IDP&Date">
  <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=MODSetter/SurfSense&type=Date&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=MODSetter/SurfSense&type=Date" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=MODSetter/SurfSense&type=Date" />
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=MODSetter/Primus IDP&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=MODSetter/Primus IDP&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=MODSetter/Primus IDP&type=Date" />
  </picture>
 </a>
 
@@ -303,3 +303,4 @@ For detailed contribution guidelines, please see our [CONTRIBUTING.md](CONTRIBUT
 
 ---
 ---
+

@@ -811,3 +811,4 @@ async def process_file_in_background(
 
         logging.error(f"Error processing file in background: {e!s}")
         raise  # Re-raise so the wrapper can also handle it
+

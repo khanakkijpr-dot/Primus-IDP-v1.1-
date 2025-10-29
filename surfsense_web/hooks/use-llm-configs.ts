@@ -64,7 +64,7 @@ export function useLLMConfigs(searchSpaceId: number | null) {
 				`${process.env.NEXT_PUBLIC_FASTAPI_BACKEND_URL}/api/v1/llm-configs/?search_space_id=${searchSpaceId}`,
 				{
 					headers: {
-						Authorization: `Bearer ${localStorage.getItem("surfsense_bearer_token")}`,
+						Authorization: `Bearer ${localStorage.getItem("primus_idp_bearer_token")}`,
 					},
 					method: "GET",
 				}
@@ -97,7 +97,7 @@ export function useLLMConfigs(searchSpaceId: number | null) {
 					method: "POST",
 					headers: {
 						"Content-Type": "application/json",
-						Authorization: `Bearer ${localStorage.getItem("surfsense_bearer_token")}`,
+						Authorization: `Bearer ${localStorage.getItem("primus_idp_bearer_token")}`,
 					},
 					body: JSON.stringify(config),
 				}
@@ -126,7 +126,7 @@ export function useLLMConfigs(searchSpaceId: number | null) {
 				{
 					method: "DELETE",
 					headers: {
-						Authorization: `Bearer ${localStorage.getItem("surfsense_bearer_token")}`,
+						Authorization: `Bearer ${localStorage.getItem("primus_idp_bearer_token")}`,
 					},
 				}
 			);
@@ -156,7 +156,7 @@ export function useLLMConfigs(searchSpaceId: number | null) {
 					method: "PUT",
 					headers: {
 						"Content-Type": "application/json",
-						Authorization: `Bearer ${localStorage.getItem("surfsense_bearer_token")}`,
+						Authorization: `Bearer ${localStorage.getItem("primus_idp_bearer_token")}`,
 					},
 					body: JSON.stringify(config),
 				}
@@ -206,7 +206,7 @@ export function useLLMPreferences(searchSpaceId: number | null) {
 				`${process.env.NEXT_PUBLIC_FASTAPI_BACKEND_URL}/api/v1/search-spaces/${searchSpaceId}/llm-preferences`,
 				{
 					headers: {
-						Authorization: `Bearer ${localStorage.getItem("surfsense_bearer_token")}`,
+						Authorization: `Bearer ${localStorage.getItem("primus_idp_bearer_token")}`,
 					},
 					method: "GET",
 				}
@@ -244,7 +244,7 @@ export function useLLMPreferences(searchSpaceId: number | null) {
 					method: "PUT",
 					headers: {
 						"Content-Type": "application/json",
-						Authorization: `Bearer ${localStorage.getItem("surfsense_bearer_token")}`,
+						Authorization: `Bearer ${localStorage.getItem("primus_idp_bearer_token")}`,
 					},
 					body: JSON.stringify(newPreferences),
 				}
@@ -283,3 +283,6 @@ export function useLLMPreferences(searchSpaceId: number | null) {
 		isOnboardingComplete,
 	};
 }
+
+
+

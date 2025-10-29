@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Docling Document Processing Service for SurfSense
+Docling Document Processing Service for Primus IDP
 SSL-safe implementation with pre-downloaded models
 """
 
@@ -369,3 +369,4 @@ Ensure:
 def create_docling_service() -> DoclingService:
     """Create a Docling service instance."""
     return DoclingService()
+

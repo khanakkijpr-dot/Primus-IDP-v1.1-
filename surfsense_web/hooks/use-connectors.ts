@@ -38,7 +38,7 @@ export const ConnectorService = {
 				method: "POST",
 				headers: {
 					"Content-Type": "application/json",
-					Authorization: `Bearer ${localStorage.getItem("surfsense_bearer_token")}`,
+					Authorization: `Bearer ${localStorage.getItem("primus_idp_bearer_token")}`,
 				},
 				body: JSON.stringify(data),
 			}
@@ -58,7 +58,7 @@ export const ConnectorService = {
 			`${process.env.NEXT_PUBLIC_FASTAPI_BACKEND_URL}/api/v1/search-source-connectors/?skip=${skip}&limit=${limit}`,
 			{
 				headers: {
-					Authorization: `Bearer ${localStorage.getItem("surfsense_bearer_token")}`,
+					Authorization: `Bearer ${localStorage.getItem("primus_idp_bearer_token")}`,
 				},
 			}
 		);
@@ -77,7 +77,7 @@ export const ConnectorService = {
 			`${process.env.NEXT_PUBLIC_FASTAPI_BACKEND_URL}/api/v1/search-source-connectors/${connectorId}`,
 			{
 				headers: {
-					Authorization: `Bearer ${localStorage.getItem("surfsense_bearer_token")}`,
+					Authorization: `Bearer ${localStorage.getItem("primus_idp_bearer_token")}`,
 				},
 			}
 		);
@@ -98,7 +98,7 @@ export const ConnectorService = {
 				method: "PUT",
 				headers: {
 					"Content-Type": "application/json",
-					Authorization: `Bearer ${localStorage.getItem("surfsense_bearer_token")}`,
+					Authorization: `Bearer ${localStorage.getItem("primus_idp_bearer_token")}`,
 				},
 				body: JSON.stringify(data),
 			}
@@ -119,7 +119,7 @@ export const ConnectorService = {
 			{
 				method: "DELETE",
 				headers: {
-					Authorization: `Bearer ${localStorage.getItem("surfsense_bearer_token")}`,
+					Authorization: `Bearer ${localStorage.getItem("primus_idp_bearer_token")}`,
 				},
 			}
 		);
@@ -130,3 +130,6 @@ export const ConnectorService = {
 		}
 	},
 };
+
+
+

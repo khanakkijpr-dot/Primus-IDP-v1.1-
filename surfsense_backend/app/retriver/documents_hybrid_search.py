@@ -287,3 +287,4 @@ class DocumentHybridSearchRetriever:
                 )
 
         return serialized_results
+

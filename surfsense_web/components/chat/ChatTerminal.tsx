@@ -97,3 +97,5 @@ export default function TerminalDisplay({ message, open }: { message: Message; o
 		</div>
 	);
 }
+
+

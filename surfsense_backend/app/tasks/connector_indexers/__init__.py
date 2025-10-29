@@ -62,3 +62,4 @@ __all__ = [  # noqa: RUF022
     "index_slack_messages",
     "index_google_gmail_messages",
 ]
+

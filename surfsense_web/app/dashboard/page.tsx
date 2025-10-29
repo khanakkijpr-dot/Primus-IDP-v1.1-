@@ -213,7 +213,7 @@ const DashboardPage = () => {
 				{
 					method: "DELETE",
 					headers: {
-						Authorization: `Bearer ${localStorage.getItem("surfsense_bearer_token")}`,
+						Authorization: `Bearer ${localStorage.getItem("primus_idp_bearer_token")}`,
 					},
 				}
 			);
@@ -245,7 +245,7 @@ const DashboardPage = () => {
 					<div className="flex flex-row space-x-4">
 						<Logo className="w-10 h-10 rounded-md" />
 						<div className="flex flex-col space-y-2">
-							<h1 className="text-4xl font-bold">{t('surfsense_dashboard')}</h1>
+							<h1 className="text-4xl font-bold">{t('Primus IDP_dashboard')}</h1>
 							<p className="text-muted-foreground">{t('welcome_message')}</p>
 						</div>
 					</div>
@@ -406,3 +406,6 @@ const DashboardPage = () => {
 };
 
 export default DashboardPage;
+
+
+

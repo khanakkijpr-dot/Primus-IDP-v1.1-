@@ -224,3 +224,5 @@ export const ResearchModeControl = ({ value, onChange }: ResearchModeControlProp
 		</div>
 	);
 };
+
+

@@ -118,3 +118,4 @@ async def delete_search_space(
         raise HTTPException(
             status_code=500, detail=f"Failed to delete search space: {e!s}"
         ) from e
+

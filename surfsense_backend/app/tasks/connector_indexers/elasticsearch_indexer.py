@@ -1,5 +1,5 @@
 """
-Elasticsearch indexer for SurfSense
+Elasticsearch indexer for Primus IDP
 """
 
 import json
@@ -34,7 +34,7 @@ async def index_elasticsearch_documents(
     update_last_indexed: bool = True,
 ) -> tuple[int, str | None]:
     """
-    Index documents from Elasticsearch into SurfSense
+    Index documents from Elasticsearch into Primus IDP
 
     Args:
         session: Database session
@@ -396,3 +396,4 @@ def _build_document_content(source: dict[str, Any], config: dict[str, Any]) -> s
                 content_parts.append(f"{key}: {json.dumps(value)}")
 
     return "\n".join(content_parts)
+

@@ -71,3 +71,5 @@ function ChatMessageUI({ message, isLast }: { message: Message; isLast: boolean 
 		</LlamaIndexChatMessage>
 	);
 }
+
+

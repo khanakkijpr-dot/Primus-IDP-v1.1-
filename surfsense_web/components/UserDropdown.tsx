@@ -28,7 +28,7 @@ export function UserDropdown({
 	const handleLogout = () => {
 		try {
 			if (typeof window !== "undefined") {
-				localStorage.removeItem("surfsense_bearer_token");
+				localStorage.removeItem("primus_idp_bearer_token");
 				router.push("/");
 			}
 		} catch (error) {
@@ -74,3 +74,5 @@ export function UserDropdown({
 		</DropdownMenu>
 	);
 }
+
+

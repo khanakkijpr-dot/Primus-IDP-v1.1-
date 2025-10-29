@@ -66,7 +66,7 @@ export const useSearchSourceConnectors = (lazy: boolean = false, searchSpaceId?:
 			try {
 				setIsLoading(true);
 				setError(null);
-				const token = localStorage.getItem("surfsense_bearer_token");
+				const token = localStorage.getItem("primus_idp_bearer_token");
 
 				if (!token) {
 					throw new Error("No authentication token found");
@@ -176,7 +176,7 @@ export const useSearchSourceConnectors = (lazy: boolean = false, searchSpaceId?:
 		spaceId: number
 	) => {
 		try {
-			const token = localStorage.getItem("surfsense_bearer_token");
+			const token = localStorage.getItem("primus_idp_bearer_token");
 
 			if (!token) {
 				throw new Error("No authentication token found");
@@ -222,7 +222,7 @@ export const useSearchSourceConnectors = (lazy: boolean = false, searchSpaceId?:
 		>
 	) => {
 		try {
-			const token = localStorage.getItem("surfsense_bearer_token");
+			const token = localStorage.getItem("primus_idp_bearer_token");
 
 			if (!token) {
 				throw new Error("No authentication token found");
@@ -262,7 +262,7 @@ export const useSearchSourceConnectors = (lazy: boolean = false, searchSpaceId?:
 	 */
 	const deleteConnector = async (connectorId: number) => {
 		try {
-			const token = localStorage.getItem("surfsense_bearer_token");
+			const token = localStorage.getItem("primus_idp_bearer_token");
 
 			if (!token) {
 				throw new Error("No authentication token found");
@@ -302,7 +302,7 @@ export const useSearchSourceConnectors = (lazy: boolean = false, searchSpaceId?:
 		endDate?: string
 	) => {
 		try {
-			const token = localStorage.getItem("surfsense_bearer_token");
+			const token = localStorage.getItem("primus_idp_bearer_token");
 
 			if (!token) {
 				throw new Error("No authentication token found");
@@ -378,3 +378,6 @@ export const useSearchSourceConnectors = (lazy: boolean = false, searchSpaceId?:
 		refreshConnectors,
 	};
 };
+
+
+

@@ -294,3 +294,4 @@ class GitHubConnector:
                 f"Failed to get content for file '{file_path}' in '{repo_full_name}': {e}"
             )
             return None
+

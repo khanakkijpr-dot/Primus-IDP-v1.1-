@@ -33,7 +33,7 @@ class Config:
         # check if ffmpeg is installed again
         if not is_ffmpeg_installed():
             raise ValueError(
-                "FFmpeg is not installed on the system. Please install it to use the Surfsense Podcaster."
+                "FFmpeg is not installed on the system. Please install it to use the Primus IDP Podcaster."
             )
 
     # Database
@@ -132,3 +132,4 @@ class Config:
 
 # Create a config instance
 config = Config()
+

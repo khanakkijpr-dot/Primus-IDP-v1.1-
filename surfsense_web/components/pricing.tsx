@@ -220,3 +220,5 @@ export function Pricing({
 		</div>
 	);
 }
+
+

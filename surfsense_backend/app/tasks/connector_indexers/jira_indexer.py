@@ -412,3 +412,4 @@ async def index_jira_issues(
         )
         logger.error(f"Failed to index JIRA issues: {e!s}", exc_info=True)
         return 0, f"Failed to index JIRA issues: {e!s}"
+

@@ -600,3 +600,4 @@ async def _index_elasticsearch_documents(
         await run_elasticsearch_indexing(
             session, connector_id, search_space_id, user_id, start_date, end_date
         )
+

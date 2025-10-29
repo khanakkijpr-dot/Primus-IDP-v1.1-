@@ -1,12 +1,12 @@
 ---
 title: Manual Installation
-description: Setting up SurfSense manually for customized deployments (Preferred)
+description: Setting up Primus IDP manually for customized deployments (Preferred)
 full: true
 ---
 
 # Manual Installation (Preferred)
 
-This guide provides step-by-step instructions for setting up SurfSense without Docker. This approach gives you more control over the installation process and allows for customization of the environment.
+This guide provides step-by-step instructions for setting up Primus IDP without Docker. This approach gives you more control over the installation process and allows for customization of the environment.
 
 ## Prerequisites
 
@@ -35,7 +35,7 @@ Complete all the [setup steps](/docs), including:
 
 ## Backend Setup
 
-The backend is the core of SurfSense. Follow these steps to set it up:
+The backend is the core of Primus IDP. Follow these steps to set it up:
 
 ### 1. Environment Configuration
 
@@ -44,21 +44,21 @@ First, create and configure your environment variables by copying the example fi
 **Linux/macOS:**
 
 ```bash
-cd surfsense_backend
+cd Primus IDP_backend
 cp .env.example .env
 ```
 
 **Windows (Command Prompt):**
 
 ```cmd
-cd surfsense_backend
+cd Primus IDP_backend
 copy .env.example .env
 ```
 
 **Windows (PowerShell):**
 
 ```powershell
-cd surfsense_backend
+cd Primus IDP_backend
 Copy-Item -Path .env.example -Destination .env
 ```
 
@@ -66,7 +66,7 @@ Edit the `.env` file and set the following variables:
 
 | ENV VARIABLE               | DESCRIPTION                                                                                                                                                                               |
 | -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DATABASE_URL               | PostgreSQL connection string (e.g., `postgresql+asyncpg://postgres:postgres@localhost:5432/surfsense`)                                                                                    |
+| DATABASE_URL               | PostgreSQL connection string (e.g., `postgresql+asyncpg://postgres:postgres@localhost:5432/Primus IDP`)                                                                                    |
 | SECRET_KEY                 | JWT Secret key for authentication (should be a secure random string)                                                                                                                      |
 | NEXT_FRONTEND_URL          | URL where your frontend application is hosted (e.g., `http://localhost:3000`)                                                                                                             |
 | AUTH_TYPE                  | Authentication method: `GOOGLE` for OAuth with Google, `LOCAL` for email/password authentication                                                                                          |
@@ -96,7 +96,7 @@ Edit the `.env` file and set the following variables:
 | LANGSMITH_TRACING | Enable LangSmith tracing (e.g., `true`) |
 | LANGSMITH_ENDPOINT | LangSmith API endpoint (e.g., `https://api.smith.langchain.com`) |
 | LANGSMITH_API_KEY | Your LangSmith API key |
-| LANGSMITH_PROJECT | LangSmith project name (e.g., `surfsense`) |
+| LANGSMITH_PROJECT | LangSmith project name (e.g., `Primus IDP`) |
 
 **(Optional) Uvicorn Server Configuration**
 | ENV VARIABLE | DESCRIPTION | DEFAULT VALUE |
@@ -233,8 +233,8 @@ In a new terminal window, start the Celery worker to handle background tasks:
 **Linux/macOS/Windows:**
 
 ```bash
-# Make sure you're in the surfsense_backend directory
-cd surfsense_backend
+# Make sure you're in the Primus IDP_backend directory
+cd Primus IDP_backend
 
 # Start Celery worker
 uv run celery -A celery_worker.celery_app worker --loglevel=info --concurrency=1 --pool=solo
@@ -258,8 +258,8 @@ In another new terminal window, start Celery Beat to enable periodic tasks (like
 **Linux/macOS/Windows:**
 
 ```bash
-# Make sure you're in the surfsense_backend directory
-cd surfsense_backend
+# Make sure you're in the Primus IDP_backend directory
+cd Primus IDP_backend
 
 # Start Celery Beat
 uv run celery -A celery_worker.celery_app beat --loglevel=info
@@ -292,21 +292,21 @@ Set up the frontend environment:
 **Linux/macOS:**
 
 ```bash
-cd surfsense_web
+cd Primus IDP_web
 cp .env.example .env
 ```
 
 **Windows (Command Prompt):**
 
 ```cmd
-cd surfsense_web
+cd Primus IDP_web
 copy .env.example .env
 ```
 
 **Windows (PowerShell):**
 
 ```powershell
-cd surfsense_web
+cd Primus IDP_web
 Copy-Item -Path .env.example -Destination .env
 ```
 
@@ -356,28 +356,28 @@ The frontend should now be running at `http://localhost:3000`.
 
 ## Browser Extension Setup (Optional)
 
-The SurfSense browser extension allows you to save any webpage, including those protected behind authentication.
+The Primus IDP browser extension allows you to save any webpage, including those protected behind authentication.
 
 ### 1. Environment Configuration
 
 **Linux/macOS:**
 
 ```bash
-cd surfsense_browser_extension
+cd Primus IDP_browser_extension
 cp .env.example .env
 ```
 
 **Windows (Command Prompt):**
 
 ```cmd
-cd surfsense_browser_extension
+cd Primus IDP_browser_extension
 copy .env.example .env
 ```
 
 **Windows (PowerShell):**
 
 ```powershell
-cd surfsense_browser_extension
+cd Primus IDP_browser_extension
 Copy-Item -Path .env.example -Destination .env
 ```
 
@@ -385,7 +385,7 @@ Edit the `.env` file:
 
 | ENV VARIABLE              | DESCRIPTION                                           |
 | ------------------------- | ----------------------------------------------------- |
-| PLASMO_PUBLIC_BACKEND_URL | SurfSense Backend URL (e.g., `http://127.0.0.1:8000`) |
+| PLASMO_PUBLIC_BACKEND_URL | Primus IDP Backend URL (e.g., `http://127.0.0.1:8000`) |
 
 ### 2. Build the Extension
 
@@ -407,7 +407,7 @@ pnpm build --target=edge
 
 ### 3. Load the Extension
 
-Load the extension in your browser's developer mode and configure it with your SurfSense API key.
+Load the extension in your browser's developer mode and configure it with your Primus IDP API key.
 
 ## Verification
 
@@ -431,7 +431,7 @@ To verify your installation:
 
 ## Next Steps
 
-Now that you have SurfSense running locally, you can explore its features:
+Now that you have Primus IDP running locally, you can explore its features:
 
 - Create search spaces for organizing your content
 - Upload documents or use the browser extension to save webpages
@@ -444,3 +444,4 @@ For production deployments, consider setting up:
 - SSL certificates for secure connections
 - Proper database backups
 - User access controls
+

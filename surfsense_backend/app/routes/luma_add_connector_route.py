@@ -250,3 +250,4 @@ async def test_luma_connector(
             status_code=500,
             detail=f"Failed to test Luma connector: {e!s}",
         ) from e
+

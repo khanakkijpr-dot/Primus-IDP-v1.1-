@@ -1525,3 +1525,4 @@ async def run_elasticsearch_indexing(
             f"Critical error in run_elasticsearch_indexing for connector {connector_id}: {e}",
             exc_info=True,
         )
+

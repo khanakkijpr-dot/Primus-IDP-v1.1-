@@ -189,3 +189,4 @@ class StreamingService:
             },
         }
         return f"d:{json.dumps(completion_data)}\n"
+

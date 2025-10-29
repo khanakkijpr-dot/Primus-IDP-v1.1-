@@ -27,3 +27,4 @@ const nextConfig: NextConfig = {
 const withMDX = createMDX({});
 
 export default withNextIntl(withMDX(nextConfig));
+

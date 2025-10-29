@@ -99,7 +99,7 @@ export function useLogs(searchSpaceId?: number, filters: LogFilters = {}) {
 					`${process.env.NEXT_PUBLIC_FASTAPI_BACKEND_URL}/api/v1/logs/?${params}`,
 					{
 						headers: {
-							Authorization: `Bearer ${localStorage.getItem("surfsense_bearer_token")}`,
+							Authorization: `Bearer ${localStorage.getItem("primus_idp_bearer_token")}`,
 						},
 						method: "GET",
 					}
@@ -150,7 +150,7 @@ export function useLogs(searchSpaceId?: number, filters: LogFilters = {}) {
 			const response = await fetch(`${process.env.NEXT_PUBLIC_FASTAPI_BACKEND_URL}/api/v1/logs/`, {
 				headers: {
 					"Content-Type": "application/json",
-					Authorization: `Bearer ${localStorage.getItem("surfsense_bearer_token")}`,
+					Authorization: `Bearer ${localStorage.getItem("primus_idp_bearer_token")}`,
 				},
 				method: "POST",
 				body: JSON.stringify(logData),
@@ -184,7 +184,7 @@ export function useLogs(searchSpaceId?: number, filters: LogFilters = {}) {
 					{
 						headers: {
 							"Content-Type": "application/json",
-							Authorization: `Bearer ${localStorage.getItem("surfsense_bearer_token")}`,
+							Authorization: `Bearer ${localStorage.getItem("primus_idp_bearer_token")}`,
 						},
 						method: "PUT",
 						body: JSON.stringify(updateData),
@@ -216,7 +216,7 @@ export function useLogs(searchSpaceId?: number, filters: LogFilters = {}) {
 				`${process.env.NEXT_PUBLIC_FASTAPI_BACKEND_URL}/api/v1/logs/${logId}`,
 				{
 					headers: {
-						Authorization: `Bearer ${localStorage.getItem("surfsense_bearer_token")}`,
+						Authorization: `Bearer ${localStorage.getItem("primus_idp_bearer_token")}`,
 					},
 					method: "DELETE",
 				}
@@ -244,7 +244,7 @@ export function useLogs(searchSpaceId?: number, filters: LogFilters = {}) {
 				`${process.env.NEXT_PUBLIC_FASTAPI_BACKEND_URL}/api/v1/logs/${logId}`,
 				{
 					headers: {
-						Authorization: `Bearer ${localStorage.getItem("surfsense_bearer_token")}`,
+						Authorization: `Bearer ${localStorage.getItem("primus_idp_bearer_token")}`,
 					},
 					method: "GET",
 				}
@@ -291,7 +291,7 @@ export function useLogsSummary(searchSpaceId: number, hours: number = 24) {
 				`${process.env.NEXT_PUBLIC_FASTAPI_BACKEND_URL}/api/v1/logs/search-space/${searchSpaceId}/summary?hours=${hours}`,
 				{
 					headers: {
-						Authorization: `Bearer ${localStorage.getItem("surfsense_bearer_token")}`,
+						Authorization: `Bearer ${localStorage.getItem("primus_idp_bearer_token")}`,
 					},
 					method: "GET",
 				}
@@ -325,3 +325,6 @@ export function useLogsSummary(searchSpaceId: number, hours: number = 24) {
 
 	return { summary, loading, error, refreshSummary };
 }
+
+
+

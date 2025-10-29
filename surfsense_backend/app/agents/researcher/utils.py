@@ -267,3 +267,4 @@ def langchain_chat_history_to_str(chat_history: list[BaseMessage]) -> str:
             chat_history_str += f"<system>{chat_message.content}</system>\n"
 
     return chat_history_str
+

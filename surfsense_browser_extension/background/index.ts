@@ -68,3 +68,4 @@ chrome.tabs.onRemoved.addListener(async (tabId: number, removeInfo: object) => {
 		});
 	}
 });
+

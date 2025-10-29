@@ -38,3 +38,4 @@ class State:
     # OUTPUT: Populated by agent nodes
     # Using field to explicitly mark as part of state
     final_written_report: str | None = field(default=None)
+

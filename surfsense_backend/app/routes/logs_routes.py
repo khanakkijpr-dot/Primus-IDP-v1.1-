@@ -293,3 +293,4 @@ async def get_logs_summary(
         raise HTTPException(
             status_code=500, detail=f"Failed to generate logs summary: {e!s}"
         ) from e
+

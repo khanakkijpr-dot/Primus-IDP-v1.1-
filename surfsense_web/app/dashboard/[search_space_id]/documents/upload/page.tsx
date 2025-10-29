@@ -256,18 +256,16 @@ export default function FileUploader() {
 				});
 			}, 200);
 
-			const response = await fetch(
-				`${process.env.NEXT_PUBLIC_FASTAPI_BACKEND_URL}/api/v1/documents/fileupload`,
-				{
-					method: "POST",
-					headers: {
-						Authorization: `Bearer ${window.localStorage.getItem("surfsense_bearer_token")}`,
-					},
-					body: formData,
-				}
-			);
-
-			clearInterval(progressInterval);
+		const response = await fetch(
+			`${process.env.NEXT_PUBLIC_FASTAPI_BACKEND_URL}/api/v1/documents/fileupload`,
+			{
+				method: "POST",
+				headers: {
+					Authorization: `Bearer ${window.localStorage.getItem("primus_idp_bearer_token")}`,
+				},
+				body: formData,
+			}
+		);			clearInterval(progressInterval);
 			setUploadProgress(100);
 
 			if (!response.ok) {
@@ -586,3 +584,4 @@ export default function FileUploader() {
 		</div>
 	);
 }
+

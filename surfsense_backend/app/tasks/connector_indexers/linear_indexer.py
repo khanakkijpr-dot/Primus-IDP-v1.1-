@@ -431,3 +431,4 @@ async def index_linear_issues(
         )
         logger.error(f"Failed to index Linear issues: {e!s}", exc_info=True)
         return 0, f"Failed to index Linear issues: {e!s}"
+

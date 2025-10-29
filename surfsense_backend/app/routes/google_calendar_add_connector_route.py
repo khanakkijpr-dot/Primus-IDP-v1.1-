@@ -160,3 +160,4 @@ async def calendar_callback(
         raise HTTPException(
             status_code=500, detail=f"Failed to complete Google OAuth: {e!s}"
         ) from e
+

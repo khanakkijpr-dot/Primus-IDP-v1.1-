@@ -264,3 +264,4 @@ class ChucksHybridSearchRetriever:
             )
 
         return serialized_results
+

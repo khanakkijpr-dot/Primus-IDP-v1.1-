@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Privacy Policy | SurfSense",
-	description: "Privacy Policy for SurfSense application",
+	title: "Privacy Policy | Primus IDP",
+	description: "Privacy Policy for Primus IDP application",
 };
 
 export default function PrivacyPolicy() {
@@ -16,7 +16,7 @@ export default function PrivacyPolicy() {
 				<section className="mb-8">
 					<h2 className="text-2xl font-semibold mb-4">1. Introduction</h2>
 					<p>
-						Welcome to SurfSense. We respect your privacy and are committed to protecting your
+						Welcome to Primus IDP. We respect your privacy and are committed to protecting your
 						personal data. This privacy policy will inform you about how we look after your personal
 						data when you visit our website and tell you about your privacy rights and how the law
 						protects you.
@@ -181,10 +181,12 @@ export default function PrivacyPolicy() {
 						contact us at:
 					</p>
 					<p className="mt-2">
-						<strong>Email:</strong> rohan@surfsense.com
+						<strong>Email:</strong> rohan@Primus IDP.com
 					</p>
 				</section>
 			</div>
 		</div>
 	);
 }
+
+

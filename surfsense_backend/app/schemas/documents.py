@@ -1,5 +1,5 @@
 from datetime import datetime
-from typing import TypeVar
+from typing import Generic, TypeVar
 
 from pydantic import BaseModel, ConfigDict
 
@@ -58,6 +58,7 @@ class DocumentWithChunksRead(DocumentRead):
     model_config = ConfigDict(from_attributes=True)
 
 
-class PaginatedResponse[T](BaseModel):
+class PaginatedResponse(BaseModel, Generic[T]):
     items: list[T]
     total: int
+

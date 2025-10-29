@@ -169,3 +169,4 @@ def update_periodic_schedule(
     # Uncomment the line below if you want immediate execution on schedule update
     # return create_periodic_schedule(connector_id, search_space_id, user_id, connector_type, frequency_minutes)
     return True
+

@@ -460,3 +460,4 @@ async def index_google_calendar_events(
         )
         logger.error(f"Failed to index Google Calendar events: {e!s}", exc_info=True)
         return 0, f"Failed to index Google Calendar events: {e!s}"
+

@@ -17,7 +17,7 @@ export function useApiKey(): UseApiKeyReturn {
 		// Load API key from localStorage
 		const loadApiKey = () => {
 			try {
-				const token = localStorage.getItem("surfsense_bearer_token");
+				const token = localStorage.getItem("primus_idp_bearer_token");
 				setApiKey(token);
 			} catch (error) {
 				console.error("Error loading API key:", error);
@@ -56,3 +56,6 @@ export function useApiKey(): UseApiKeyReturn {
 		copyToClipboard,
 	};
 }
+
+
+

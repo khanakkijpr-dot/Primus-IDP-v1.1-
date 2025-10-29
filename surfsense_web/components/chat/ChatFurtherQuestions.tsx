@@ -34,3 +34,5 @@ export const ChatFurtherQuestions: React.FC<{ message: Message }> = ({ message }
 		</Accordion>
 	);
 };
+
+

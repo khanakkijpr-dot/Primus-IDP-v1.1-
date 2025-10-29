@@ -9,7 +9,7 @@ from fastapi_users.authentication import (
     JWTStrategy,
 )
 from fastapi_users.db import SQLAlchemyUserDatabase
-from fastapi_users.schemas import model_dump
+# from fastapi_users.schemas import model_dump
 from pydantic import BaseModel
 
 from app.config import config
@@ -86,7 +86,7 @@ class CustomBearerTransport(BearerTransport):
         if config.AUTH_TYPE == "GOOGLE":
             return RedirectResponse(redirect_url, status_code=302)
         else:
-            return JSONResponse(model_dump(bearer_response))
+            return JSONResponse(bearer_response.model_dump() if hasattr(bearer_response, "model_dump") else bearer_response.dict())
 
 
 bearer_transport = CustomBearerTransport(tokenUrl="auth/jwt/login")
@@ -101,3 +101,4 @@ auth_backend = AuthenticationBackend(
 fastapi_users = FastAPIUsers[User, uuid.UUID](get_user_manager, [auth_backend])
 
 current_active_user = fastapi_users.current_user(active=True)
+

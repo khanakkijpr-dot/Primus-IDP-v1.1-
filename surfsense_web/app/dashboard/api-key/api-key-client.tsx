@@ -39,7 +39,7 @@ const ApiKeyClient = () => {
 				<motion.div className="mb-8 text-center" variants={fadeIn}>
 					<h1 className="text-3xl font-bold tracking-tight">API Key</h1>
 					<p className="text-muted-foreground mt-2">
-						Your API key for authenticating with the SurfSense API.
+						Your API key for authenticating with the Primus IDP API.
 					</p>
 				</motion.div>
 
@@ -183,3 +183,5 @@ const ApiKeyClient = () => {
 };
 
 export default ApiKeyClient;
+
+

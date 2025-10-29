@@ -136,7 +136,7 @@ export function AnimatedEmptyState() {
 				<RoughNotationGroup show={shouldShowHighlight}>
 					<h1 className={headingClassName}>
 						<RoughNotation {...ANIMATION_CONFIG.HIGHLIGHT}>
-							<span>SurfSense</span>
+							<span>Primus IDP</span>
 						</RoughNotation>
 					</h1>
 
@@ -149,3 +149,5 @@ export function AnimatedEmptyState() {
 		</div>
 	);
 }
+
+

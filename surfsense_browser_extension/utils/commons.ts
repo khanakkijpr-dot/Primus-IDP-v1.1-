@@ -135,3 +135,4 @@ export const webhistoryToLangChainDocument = (tabId: number, tabHistory: any[]) 
 
 	return toSaveFinally;
 };
+

@@ -479,3 +479,4 @@ async def get_documents_hybrid_search_retriever(
     session: AsyncSession = Depends(get_async_session),
 ):
     return DocumentHybridSearchRetriever(session)
+

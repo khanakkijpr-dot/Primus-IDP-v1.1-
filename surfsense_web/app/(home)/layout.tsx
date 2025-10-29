@@ -12,3 +12,5 @@ export default function HomePageLayout({ children }: { children: React.ReactNode
 		</main>
 	);
 }
+
+

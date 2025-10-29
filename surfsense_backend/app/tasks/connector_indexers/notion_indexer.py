@@ -483,3 +483,4 @@ async def index_notion_pages(
         if "notion_client" in locals():
             await notion_client.close()
         return 0, f"Failed to index Notion pages: {e!s}"
+

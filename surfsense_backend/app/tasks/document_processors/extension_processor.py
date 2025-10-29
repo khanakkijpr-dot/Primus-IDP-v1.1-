@@ -1,5 +1,5 @@
 """
-Extension document processor for SurfSense browser extension.
+Extension document processor for Primus IDP browser extension.
 """
 
 import logging
@@ -30,7 +30,7 @@ async def add_extension_received_document(
     user_id: str,
 ) -> Document | None:
     """
-    Process and store document content received from the SurfSense Extension.
+    Process and store document content received from the Primus IDP Extension.
 
     Args:
         session: Database session
@@ -207,3 +207,4 @@ async def add_extension_received_document(
             {"error_type": type(e).__name__},
         )
         raise RuntimeError(f"Failed to process extension document: {e!s}") from e
+

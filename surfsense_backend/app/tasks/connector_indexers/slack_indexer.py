@@ -424,3 +424,4 @@ async def index_slack_messages(
         )
         logger.error(f"Failed to index Slack messages: {e!s}")
         return 0, f"Failed to index Slack messages: {e!s}"
+

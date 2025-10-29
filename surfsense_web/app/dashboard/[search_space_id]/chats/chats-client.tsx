@@ -130,7 +130,7 @@ export default function ChatsPageClient({ searchSpaceId }: ChatsPageClientProps)
 				setIsLoading(true);
 
 				// Get token from localStorage
-				const token = localStorage.getItem("surfsense_bearer_token");
+				const token = localStorage.getItem("primus_idp_bearer_token");
 
 				if (!token) {
 					setError("Authentication token not found. Please log in again.");
@@ -210,7 +210,7 @@ export default function ChatsPageClient({ searchSpaceId }: ChatsPageClientProps)
 
 		setIsDeleting(true);
 		try {
-			const token = localStorage.getItem("surfsense_bearer_token");
+			const token = localStorage.getItem("primus_idp_bearer_token");
 			if (!token) {
 				setIsDeleting(false);
 				return;
@@ -269,7 +269,7 @@ export default function ChatsPageClient({ searchSpaceId }: ChatsPageClientProps)
 
 		setIsGeneratingPodcast(true);
 		try {
-			const token = localStorage.getItem("surfsense_bearer_token");
+			const token = localStorage.getItem("primus_idp_bearer_token");
 			if (!token) {
 				toast.error("Authentication error. Please log in again.");
 				setIsGeneratingPodcast(false);
@@ -891,3 +891,4 @@ export default function ChatsPageClient({ searchSpaceId }: ChatsPageClientProps)
 		</motion.div>
 	);
 }
+

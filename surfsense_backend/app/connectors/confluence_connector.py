@@ -352,3 +352,4 @@ class ConfluenceConnector:
 
         except Exception as e:
             return [], f"Error fetching pages: {e!s}"
+

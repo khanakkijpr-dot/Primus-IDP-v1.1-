@@ -312,3 +312,4 @@ async def delete_chat(
             status_code=500,
             detail="An unexpected error occurred while deleting the chat.",
         ) from None
+

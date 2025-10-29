@@ -127,3 +127,4 @@ async def _check_and_trigger_schedules():
         except Exception as e:
             logger.error(f"Error checking periodic schedules: {e!s}", exc_info=True)
             await session.rollback()
+

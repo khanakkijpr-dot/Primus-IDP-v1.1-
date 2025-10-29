@@ -54,3 +54,5 @@ export const editConnectorSchema = z.object({
 	ELASTICSEARCH_API_KEY: z.string().optional(),
 });
 export type EditConnectorFormValues = z.infer<typeof editConnectorSchema>;
+
+

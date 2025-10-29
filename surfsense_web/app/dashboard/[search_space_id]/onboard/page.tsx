@@ -34,7 +34,7 @@ const OnboardPage = () => {
 
 	// Check if user is authenticated
 	useEffect(() => {
-		const token = localStorage.getItem("surfsense_bearer_token");
+		const token = localStorage.getItem("primus_idp_bearer_token");
 		if (!token) {
 			router.push("/login");
 			return;
@@ -259,3 +259,4 @@ const OnboardPage = () => {
 };
 
 export default OnboardPage;
+

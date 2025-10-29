@@ -24,7 +24,7 @@ export function useSearchSpaces() {
 					`${process.env.NEXT_PUBLIC_FASTAPI_BACKEND_URL}/api/v1/searchspaces`,
 					{
 						headers: {
-							Authorization: `Bearer ${localStorage.getItem("surfsense_bearer_token")}`,
+							Authorization: `Bearer ${localStorage.getItem("primus_idp_bearer_token")}`,
 						},
 						method: "GET",
 					}
@@ -57,7 +57,7 @@ export function useSearchSpaces() {
 				`${process.env.NEXT_PUBLIC_FASTAPI_BACKEND_URL}/api/v1/searchspaces`,
 				{
 					headers: {
-						Authorization: `Bearer ${localStorage.getItem("surfsense_bearer_token")}`,
+						Authorization: `Bearer ${localStorage.getItem("primus_idp_bearer_token")}`,
 					},
 					method: "GET",
 				}
@@ -80,3 +80,6 @@ export function useSearchSpaces() {
 
 	return { searchSpaces, loading, error, refreshSearchSpaces };
 }
+
+
+

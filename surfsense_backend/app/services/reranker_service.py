@@ -102,3 +102,4 @@ class RerankerService:
         if hasattr(config, "reranker_instance") and config.reranker_instance:
             return RerankerService(config.reranker_instance)
         return None
+

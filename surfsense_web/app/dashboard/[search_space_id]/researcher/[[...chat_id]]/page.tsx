@@ -56,7 +56,7 @@ export default function ResearcherPage() {
 	}
 
 	const getChatStateStorageKey = (searchSpaceId: string, chatId: string) =>
-		`surfsense_chat_state_${searchSpaceId}_${chatId}`;
+		`primus_idp_chat_state_${searchSpaceId}_${chatId}`;
 
 	const storeChatState = (searchSpaceId: string, chatId: string, state: ChatState) => {
 		const key = getChatStateStorageKey(searchSpaceId, chatId);

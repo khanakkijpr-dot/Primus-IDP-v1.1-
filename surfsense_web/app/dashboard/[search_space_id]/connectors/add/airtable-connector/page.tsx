@@ -51,7 +51,7 @@ export default function AirtableConnectorPage() {
 				{
 					method: "GET",
 					headers: {
-						Authorization: `Bearer ${localStorage.getItem("surfsense_bearer_token")}`,
+						Authorization: `Bearer ${localStorage.getItem("primus_idp_bearer_token")}`,
 					},
 				}
 			);
@@ -183,3 +183,4 @@ export default function AirtableConnectorPage() {
 		</div>
 	);
 }
+

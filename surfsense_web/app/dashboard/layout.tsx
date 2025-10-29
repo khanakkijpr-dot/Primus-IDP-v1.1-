@@ -15,7 +15,7 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
 
 	useEffect(() => {
 		// Check if user is authenticated
-		const token = localStorage.getItem("surfsense_bearer_token");
+		const token = localStorage.getItem("primus_idp_bearer_token");
 		if (!token) {
 			router.push("/login");
 			return;
@@ -42,3 +42,6 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
 
 	return <>{children}</>;
 }
+
+
+

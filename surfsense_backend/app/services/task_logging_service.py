@@ -241,3 +241,4 @@ class TaskLoggingService:
 
         logger.info(f"Logged event from {source}: {message}")
         return log_entry
+

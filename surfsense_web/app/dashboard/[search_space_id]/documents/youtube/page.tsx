@@ -78,7 +78,7 @@ export default function YouTubeVideoAdder() {
 					method: "POST",
 					headers: {
 						"Content-Type": "application/json",
-						Authorization: `Bearer ${localStorage.getItem("surfsense_bearer_token")}`,
+						Authorization: `Bearer ${localStorage.getItem("primus_idp_bearer_token")}`,
 					},
 					body: JSON.stringify({
 						document_type: "YOUTUBE_VIDEO",
@@ -304,3 +304,4 @@ export default function YouTubeVideoAdder() {
 		</div>
 	);
 }
+

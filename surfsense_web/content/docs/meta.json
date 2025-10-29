@@ -1,6 +1,6 @@
 {
 	"title": "Setup",
-	"description": "The setup guide for Surfsense",
+	"description": "The setup guide for Primus IDP",
 	"root": true,
 	"pages": ["index", "installation", "docker-installation", "manual-installation"]
 }

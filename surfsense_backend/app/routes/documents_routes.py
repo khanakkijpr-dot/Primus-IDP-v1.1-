@@ -561,3 +561,4 @@ async def get_document_by_chunk_id(
         raise HTTPException(
             status_code=500, detail=f"Failed to retrieve document: {e!s}"
         ) from e
+

@@ -101,7 +101,7 @@ export default function GithubConnectorPage() {
 		setConnectorName(values.name); // Store the name
 		setValidatedPat(values.github_pat); // Store the PAT temporarily
 		try {
-			const token = localStorage.getItem("surfsense_bearer_token");
+			const token = localStorage.getItem("primus_idp_bearer_token");
 			if (!token) {
 				throw new Error("No authentication token found");
 			}
@@ -531,3 +531,4 @@ export default function GithubConnectorPage() {
 		</div>
 	);
 }
+

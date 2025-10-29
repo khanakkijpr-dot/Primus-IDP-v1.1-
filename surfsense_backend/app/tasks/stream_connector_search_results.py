@@ -91,3 +91,4 @@ async def stream_connector_search_results(
             yield chunk["yield_value"]
 
     yield streaming_service.format_completion()
+

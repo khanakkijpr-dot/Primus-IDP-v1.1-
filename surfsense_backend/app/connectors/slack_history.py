@@ -379,3 +379,4 @@ class SlackHistory:
                 formatted["user_name"] = "Unknown"
 
         return formatted
+

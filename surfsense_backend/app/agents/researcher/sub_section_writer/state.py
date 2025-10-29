@@ -24,3 +24,4 @@ class State:
     # OUTPUT: Populated by agent nodes
     reranked_documents: list[Any] | None = None
     final_answer: str | None = None
+

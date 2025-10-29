@@ -2541,3 +2541,4 @@ class ConnectorService:
         }
 
         return result_object, elasticsearch_chunks
+

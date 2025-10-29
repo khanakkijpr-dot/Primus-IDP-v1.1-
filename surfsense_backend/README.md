@@ -116,3 +116,4 @@ See pyproject.toml for detailed dependency information. Key dependencies include
 - rerankers with FlashRank: Advanced result ranking
 - Various AI and NLP libraries
 - Integration clients for Slack, Notion, etc.
+

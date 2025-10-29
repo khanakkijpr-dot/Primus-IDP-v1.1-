@@ -324,3 +324,4 @@ class GoogleCalendarConnector:
             )
 
         return markdown_content
+

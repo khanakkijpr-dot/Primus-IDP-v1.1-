@@ -21,3 +21,5 @@ export const getConnectorTypeDisplay = (type: string): string => {
 	};
 	return typeMap[type] || type;
 };
+
+

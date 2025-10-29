@@ -176,3 +176,4 @@ async def add_received_markdown_file_document(
             {"error_type": type(e).__name__},
         )
         raise RuntimeError(f"Failed to process file document: {e!s}") from e
+

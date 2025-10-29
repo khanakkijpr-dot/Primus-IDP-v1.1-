@@ -361,3 +361,4 @@ async def refresh_airtable_token(
         raise HTTPException(
             status_code=500, detail=f"Failed to refresh Airtable token: {e!s}"
         ) from e
+

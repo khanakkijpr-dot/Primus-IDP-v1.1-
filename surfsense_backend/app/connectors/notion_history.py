@@ -220,3 +220,4 @@ class NotionHistoryConnector:
 
         # Return empty string for unsupported block types
         return ""
+

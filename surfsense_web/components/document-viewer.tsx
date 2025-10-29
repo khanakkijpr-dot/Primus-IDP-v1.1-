@@ -38,3 +38,5 @@ export function DocumentViewer({ title, content, trigger }: DocumentViewerProps)
 		</Dialog>
 	);
 }
+
+

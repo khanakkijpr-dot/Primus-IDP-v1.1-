@@ -2322,3 +2322,4 @@ async def generate_further_questions(
         # Stream empty further questions to UI
         writer({"yield_value": streaming_service.format_further_questions_delta([])})
         return {"further_questions": []}
+

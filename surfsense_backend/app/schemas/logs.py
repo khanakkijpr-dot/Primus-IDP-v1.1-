@@ -50,3 +50,4 @@ class LogFilter(BaseModel):
     end_date: datetime | None = None
 
     model_config = ConfigDict(from_attributes=True)
+

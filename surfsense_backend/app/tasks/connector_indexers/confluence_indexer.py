@@ -430,3 +430,4 @@ async def index_confluence_pages(
         )
         logger.error(f"Failed to index Confluence pages: {e!s}", exc_info=True)
         return 0, f"Failed to index Confluence pages: {e!s}"
+

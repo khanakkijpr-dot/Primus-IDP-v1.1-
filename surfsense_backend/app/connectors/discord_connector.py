@@ -342,3 +342,4 @@ class DiscordConnector(commands.Bot):
                 f"Failed to fetch user info for {user_id} in guild {guild_id}: {e}"
             )
             return None
+

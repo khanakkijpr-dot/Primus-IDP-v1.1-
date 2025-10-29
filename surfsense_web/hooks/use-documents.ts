@@ -82,7 +82,7 @@ export function useDocuments(searchSpaceId: number, options?: UseDocumentsOption
 					`${process.env.NEXT_PUBLIC_FASTAPI_BACKEND_URL}/api/v1/documents?${params.toString()}`,
 					{
 						headers: {
-							Authorization: `Bearer ${localStorage.getItem("surfsense_bearer_token")}`,
+							Authorization: `Bearer ${localStorage.getItem("primus_idp_bearer_token")}`,
 						},
 						method: "GET",
 					}
@@ -163,7 +163,7 @@ export function useDocuments(searchSpaceId: number, options?: UseDocumentsOption
 					`${process.env.NEXT_PUBLIC_FASTAPI_BACKEND_URL}/api/v1/documents/search/?${params.toString()}`,
 					{
 						headers: {
-							Authorization: `Bearer ${localStorage.getItem("surfsense_bearer_token")}`,
+							Authorization: `Bearer ${localStorage.getItem("primus_idp_bearer_token")}`,
 						},
 						method: "GET",
 					}
@@ -197,7 +197,7 @@ export function useDocuments(searchSpaceId: number, options?: UseDocumentsOption
 					`${process.env.NEXT_PUBLIC_FASTAPI_BACKEND_URL}/api/v1/documents/${documentId}`,
 					{
 						headers: {
-							Authorization: `Bearer ${localStorage.getItem("surfsense_bearer_token")}`,
+							Authorization: `Bearer ${localStorage.getItem("primus_idp_bearer_token")}`,
 						},
 						method: "DELETE",
 					}
@@ -232,7 +232,7 @@ export function useDocuments(searchSpaceId: number, options?: UseDocumentsOption
 				`${process.env.NEXT_PUBLIC_FASTAPI_BACKEND_URL}/api/v1/documents/type-counts/?${params.toString()}`,
 				{
 					headers: {
-						Authorization: `Bearer ${localStorage.getItem("surfsense_bearer_token")}`,
+						Authorization: `Bearer ${localStorage.getItem("primus_idp_bearer_token")}`,
 					},
 					method: "GET",
 				}
@@ -263,3 +263,6 @@ export function useDocuments(searchSpaceId: number, options?: UseDocumentsOption
 		getDocumentTypeCounts, // Get type counts function
 	};
 }
+
+
+
