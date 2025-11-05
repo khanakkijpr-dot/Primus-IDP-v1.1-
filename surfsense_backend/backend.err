@@ -7,7 +7,7 @@ To support symlinks on Windows, you either need to activate Developer Mode or to
 Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
 Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
 Traceback (most recent call last):
-  File "C:\Users\Akki\SurfSense\surfsense_backend\main.py", line 26, in <module>
+  File "C:\Users\Akki\Primus IDP\Primus IDP_backend\main.py", line 26, in <module>
     server.run()
   File "C:\Users\Akki\AppData\Local\Programs\Python\Python311\Lib\site-packages\uvicorn\server.py", line 67, in run
     return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
@@ -42,6 +42,6 @@ Traceback (most recent call last):
   File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
   File "<frozen importlib._bootstrap_external>", line 940, in exec_module
   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
-  File "C:\Users\Akki\SurfSense\surfsense_backend\app\app.py", line 5, in <module>
+  File "C:\Users\Akki\Primus IDP\Primus IDP_backend\app\app.py", line 5, in <module>
     from sqlalchemy.ext.asyncio import AsyncSession
 ModuleNotFoundError: No module named 'sqlalchemy'

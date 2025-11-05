@@ -641,7 +641,7 @@ export default function ElasticsearchConnectorPage() {
 										The Elasticsearch connector allows you to search and retrieve documents from
 										your Elasticsearch cluster. Configure connection details, select specific
 										indices, and set search parameters to make your existing data searchable within
-										SurfSense.
+										Primus IDP.
 									</p>
 								</div>
 

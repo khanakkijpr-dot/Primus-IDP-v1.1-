@@ -155,7 +155,7 @@ export default function SearxngConnectorPage() {
 					<div>
 						<h1 className="text-3xl font-bold tracking-tight">Connect SearxNG</h1>
 						<p className="text-muted-foreground">
-							Bring your self-hosted SearxNG meta-search engine into SurfSense.
+							Bring your self-hosted SearxNG meta-search engine into Primus IDP.
 						</p>
 					</div>
 				</div>
@@ -170,7 +170,7 @@ export default function SearxngConnectorPage() {
 					<CardHeader>
 						<CardTitle className="text-2xl font-bold">Connect SearxNG</CardTitle>
 						<CardDescription>
-							Integrate SurfSense with any SearxNG instance to broaden your search coverage while
+							Integrate Primus IDP with any SearxNG instance to broaden your search coverage while
 							preserving privacy and control.
 						</CardDescription>
 					</CardHeader>

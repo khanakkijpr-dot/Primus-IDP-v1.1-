@@ -43,7 +43,6 @@ export function DashboardBreadcrumb() {
 					researcher: t('researcher'),
 					documents: t('documents'),
 					connectors: t('connectors'),
-					podcasts: t('podcasts'),
 					logs: t('logs'),
 					chats: t('chats'),
 					settings: t('settings'),

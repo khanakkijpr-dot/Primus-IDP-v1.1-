@@ -44,7 +44,6 @@ export function NavMain({ items }: { items: NavItem[] }) {
 			'Connectors': 'connectors',
 			'Add Connector': 'add_connector',
 			'Manage Connectors': 'manage_connectors',
-			'Podcasts': 'podcasts',
 			'Logs': 'logs',
 			'Platform': 'platform',
 		};

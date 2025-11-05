@@ -2,9 +2,8 @@
 
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import enMessages from '../messages/en.json';
-import zhMessages from '../messages/zh.json';
 
-type Locale = 'en' | 'zh';
+type Locale = 'en';
 
 interface LocaleContextType {
   locale: Locale;
@@ -22,27 +21,24 @@ export function LocaleProvider({ children }: { children: React.ReactNode }) {
   const [locale, setLocaleState] = useState<Locale>('en');
   const [mounted, setMounted] = useState(false);
 
-  // Get messages based on current locale
-  const messages = locale === 'zh' ? zhMessages : enMessages;
+  // Only English is supported; reuse the preloaded messages
+  const messages = enMessages;
 
-  // Load locale from localStorage after component mounts (client-side only)
+  // Ensure the document language attribute is set consistently
   useEffect(() => {
     setMounted(true);
     if (typeof window !== 'undefined') {
-      const stored = localStorage.getItem(LOCALE_STORAGE_KEY);
-      if (stored === 'zh') {
-        setLocaleState('zh');
-      }
+      localStorage.setItem(LOCALE_STORAGE_KEY, 'en');
+      document.documentElement.lang = 'en';
     }
   }, []);
 
-  // Update locale and persist to localStorage
-  const setLocale = (newLocale: Locale) => {
-    setLocaleState(newLocale);
+  // Update locale state and persist (kept for API compatibility)
+  const setLocale = () => {
+    setLocaleState('en');
     if (typeof window !== 'undefined') {
-      localStorage.setItem(LOCALE_STORAGE_KEY, newLocale);
-      // Update HTML lang attribute
-      document.documentElement.lang = newLocale;
+      localStorage.setItem(LOCALE_STORAGE_KEY, 'en');
+      document.documentElement.lang = 'en';
     }
   };
 

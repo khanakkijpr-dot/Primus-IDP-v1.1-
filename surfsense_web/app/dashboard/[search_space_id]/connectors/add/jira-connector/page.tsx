@@ -344,7 +344,7 @@ export default function JiraConnectorPage() {
 														<li>
 															Click <strong>Create API token</strong>
 														</li>
-														<li>Enter a label for your token (like "SurfSense Connector")</li>
+														<li>Enter a label for your token (like "Primus IDP Connector")</li>
 														<li>
 															Click <strong>Create</strong>
 														</li>

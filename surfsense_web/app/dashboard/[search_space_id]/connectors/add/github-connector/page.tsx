@@ -229,7 +229,7 @@ export default function GithubConnectorPage() {
 								<CardDescription>
 									{step === "enter_pat"
 										? "Provide a name and GitHub Personal Access Token (PAT) to fetch accessible repositories."
-										: `Select which repositories you want SurfSense to index for search. Found ${repositories.length} repositories accessible via your PAT.`}
+										: `Select which repositories you want Primus IDP to index for search. Found ${repositories.length} repositories accessible via your PAT.`}
 								</CardDescription>
 							</CardHeader>
 
@@ -466,7 +466,7 @@ export default function GithubConnectorPage() {
 															type).
 														</li>
 														<li>
-															Give your token a descriptive name (e.g., "SurfSense Connector").
+															Give your token a descriptive name (e.g., "Primus IDP Connector").
 														</li>
 														<li>
 															Set an expiration date for the token (recommended for security).
@@ -493,7 +493,7 @@ export default function GithubConnectorPage() {
 
 									<AccordionItem value="connect_app">
 										<AccordionTrigger className="text-lg font-medium">
-											Step 2: Connect in SurfSense
+											Step 2: Connect in Primus IDP
 										</AccordionTrigger>
 										<AccordionContent className="space-y-4">
 											<ol className="list-decimal pl-5 space-y-3">
@@ -510,7 +510,7 @@ export default function GithubConnectorPage() {
 													If the PAT is valid, you'll see a list of your accessible repositories.
 												</li>
 												<li>
-													Select the repositories you want SurfSense to index using the checkboxes.
+													Select the repositories you want Primus IDP to index using the checkboxes.
 												</li>
 												<li>
 													Click the <strong>Create Connector</strong> button.

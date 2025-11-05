@@ -13,7 +13,7 @@ export const useGithubStars = () => {
 			try {
 				setError(null);
 
-				const response = await fetch(`https://api.github.com/repos/MODSetter/SurfSense`, {
+				const response = await fetch(`https://api.github.com/repos/MODSetter/Primus IDP`, {
 					signal: abortController.signal,
 				});
 

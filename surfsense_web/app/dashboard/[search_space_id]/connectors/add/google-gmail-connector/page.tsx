@@ -111,7 +111,7 @@ export default function GoogleGmailConnectorPage() {
 						<CardHeader>
 							<CardTitle>Connect Your Gmail Account</CardTitle>
 							<CardDescription>
-								Securely connect your Gmail account to enable email search within SurfSense. We'll
+								Securely connect your Gmail account to enable email search within Primus IDP. We'll
 								only access your emails with read-only permissions.
 							</CardDescription>
 						</CardHeader>

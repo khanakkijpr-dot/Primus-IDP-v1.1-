@@ -12,7 +12,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Separator } from "@/components/ui/separator";
 import { SidebarInset, SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { useLLMPreferences } from "@/hooks/use-llm-configs";
-import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 
 export function DashboardClientLayout({
 	children,
@@ -145,7 +144,6 @@ export function DashboardClientLayout({
 							<DashboardBreadcrumb />
 						</div>
 						<div className="flex items-center gap-2">
-							<LanguageSwitcher />
 							<ThemeTogglerComponent />
 						</div>
 					</div>

@@ -84,9 +84,8 @@ export default function RootLayout({
 }: Readonly<{
 	children: React.ReactNode;
 }>) {
-	// Using client-side i18n
-	// Language can be switched dynamically through LanguageSwitcher component
-	// Locale state is managed by LocaleContext and persisted in localStorage
+	// Client-side i18n still loads message bundles via LocaleProvider
+	// Locale state is fixed to English after removal of the language switcher
 	return (
 		<html lang="en" suppressHydrationWarning>
 			<body className={cn(roboto.className, "bg-white dark:bg-black antialiased h-full w-full")}>
