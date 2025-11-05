@@ -1,0 +1,17 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build and Run SurfSense",
+			"type": "shell",
+			"command": "pwsh",
+			"args": [
+				"docker start surfsense-db-1",
+				"cd 'c:\\Users\\Akki\\SurfSense\\surfsense_backend'; & c:\\Users\\Akki\\SurfSense\\.venv\\Scripts\\python.exe main.py --reload",
+				"cd 'c:\\Users\\Akki\\SurfSense\\surfsense_web'; npm run dev"
+			],
+			"isBackground": true,
+			"group": "build"
+		}
+	]
+}
