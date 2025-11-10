@@ -1,0 +1,526 @@
+{
+  "audit_log": [
+    {
+      "timestamp": "2025-11-07T03:12:11.777890",
+      "stage": "AUDIT START",
+      "message": "Beginning file upload audit from: C:\\Users\\Akki\\Downloads\\OneDrive_1_06-11-2025",
+      "data": {}
+    },
+    {
+      "timestamp": "2025-11-07T03:12:11.780410",
+      "stage": "FILES DISCOVERED",
+      "message": "Found 3 files to upload",
+      "data": {
+        "files": [
+          "Dec-PSDL-HR-F17-WPR_HR - Copy.xlsx",
+          "Dec-PSDL-HR-F17-WPR_HR.xlsx",
+          "Digital Desk AWS WPR 06 - 12 feb.xlsx"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-07T03:12:11.781411",
+      "stage": "PRE-UPLOAD DB CHECK",
+      "message": "Querying database state before upload",
+      "data": {}
+    },
+    {
+      "timestamp": "2025-11-07T03:12:11.956929",
+      "stage": "DATABASE STATE",
+      "message": "Documents in search space: 24",
+      "data": {
+        "search_space_id": 1,
+        "search_space_name": "Akki Khan",
+        "user_id": "3a3408f8-2842-4b83-943a-9febafb23fb9",
+        "existing_documents": 24,
+        "recent_logs_count": 5,
+        "recent_log_messages": [
+          "Docling parsing completed, creating document: WPR_CC_2022_7thFeb.xlsx",
+          "Successfully processed file with Docling: WPR_CC_2022_4thApril.xlsx",
+          "Successfully processed file with Docling: WPR_CC_2022_2ndMay.xlsx",
+          "Successfully processed file with Docling: WPR_CC_28Oct2022.xlsx",
+          "Successfully processed file with Docling: WPR_CC_21Oct2022.xlsx"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-07T03:12:11.958940",
+      "stage": "UPLOAD BATCH",
+      "message": "Processing file 1/3",
+      "data": {}
+    },
+    {
+      "timestamp": "2025-11-07T03:12:11.959715",
+      "stage": "FILE SELECTED",
+      "message": "Preparing to upload: Dec-PSDL-HR-F17-WPR_HR - Copy.xlsx",
+      "data": {
+        "file_name": "Dec-PSDL-HR-F17-WPR_HR - Copy.xlsx",
+        "file_size": 66053,
+        "file_extension": ".xlsx",
+        "file_path": "C:\\Users\\Akki\\Downloads\\OneDrive_1_06-11-2025\\Dec-PSDL-HR-F17-WPR_HR - Copy.xlsx",
+        "last_modified": "2025-11-06T08:29:30.910015"
+      }
+    },
+    {
+      "timestamp": "2025-11-07T03:12:11.976007",
+      "stage": "FILE HASH",
+      "message": "Calculated SHA256 hash",
+      "data": {
+        "sha256": "fb56afc6dea605c41a4345a771144112fb03fe0135b90c76809a87c6add67a5f",
+        "purpose": "Used for deduplication in database"
+      }
+    },
+    {
+      "timestamp": "2025-11-07T03:12:12.678914",
+      "stage": "API REQUEST PREP",
+      "message": "Preparing multipart form data",
+      "data": {
+        "endpoint": "http://localhost:8000/api/v1/documents/fileupload",
+        "method": "POST",
+        "headers": {
+          "Authorization": "Bearer ***"
+        },
+        "form_data": {
+          "search_space_id": 1,
+          "files": "Dec-PSDL-HR-F17-WPR_HR - Copy.xlsx"
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-07T03:12:12.680420",
+      "stage": "API CALL",
+      "message": "Sending POST request to backend",
+      "data": {}
+    },
+    {
+      "timestamp": "2025-11-07T03:12:12.973213",
+      "stage": "API RESPONSE",
+      "message": "Status: 200",
+      "data": {
+        "status_code": 200,
+        "reason": "OK",
+        "headers": {
+          "date": "Fri, 07 Nov 2025 11:12:12 GMT",
+          "server": "uvicorn",
+          "content-length": "43",
+          "content-type": "application/json"
+        },
+        "response_body": "{\"message\":\"Files uploaded for processing\"}"
+      }
+    },
+    {
+      "timestamp": "2025-11-07T03:12:12.974720",
+      "stage": "UPLOAD SUCCESS",
+      "message": "File accepted by API",
+      "data": {
+        "message": "Files uploaded for processing"
+      }
+    },
+    {
+      "timestamp": "2025-11-07T03:12:14.980576",
+      "stage": "UPLOAD BATCH",
+      "message": "Processing file 2/3",
+      "data": {}
+    },
+    {
+      "timestamp": "2025-11-07T03:12:14.981557",
+      "stage": "FILE SELECTED",
+      "message": "Preparing to upload: Dec-PSDL-HR-F17-WPR_HR.xlsx",
+      "data": {
+        "file_name": "Dec-PSDL-HR-F17-WPR_HR.xlsx",
+        "file_size": 69194,
+        "file_extension": ".xlsx",
+        "file_path": "C:\\Users\\Akki\\Downloads\\OneDrive_1_06-11-2025\\Dec-PSDL-HR-F17-WPR_HR.xlsx",
+        "last_modified": "2025-11-06T08:29:30.930005"
+      }
+    },
+    {
+      "timestamp": "2025-11-07T03:12:14.998741",
+      "stage": "FILE HASH",
+      "message": "Calculated SHA256 hash",
+      "data": {
+        "sha256": "4b8684926391b411b9ad2c41af531b56b29372606fe879d9fa6167f83ae61b15",
+        "purpose": "Used for deduplication in database"
+      }
+    },
+    {
+      "timestamp": "2025-11-07T03:12:15.721279",
+      "stage": "API REQUEST PREP",
+      "message": "Preparing multipart form data",
+      "data": {
+        "endpoint": "http://localhost:8000/api/v1/documents/fileupload",
+        "method": "POST",
+        "headers": {
+          "Authorization": "Bearer ***"
+        },
+        "form_data": {
+          "search_space_id": 1,
+          "files": "Dec-PSDL-HR-F17-WPR_HR.xlsx"
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-07T03:12:15.722238",
+      "stage": "API CALL",
+      "message": "Sending POST request to backend",
+      "data": {}
+    },
+    {
+      "timestamp": "2025-11-07T03:12:15.996468",
+      "stage": "API RESPONSE",
+      "message": "Status: 200",
+      "data": {
+        "status_code": 200,
+        "reason": "OK",
+        "headers": {
+          "date": "Fri, 07 Nov 2025 11:12:15 GMT",
+          "server": "uvicorn",
+          "content-length": "43",
+          "content-type": "application/json"
+        },
+        "response_body": "{\"message\":\"Files uploaded for processing\"}"
+      }
+    },
+    {
+      "timestamp": "2025-11-07T03:12:15.997470",
+      "stage": "UPLOAD SUCCESS",
+      "message": "File accepted by API",
+      "data": {
+        "message": "Files uploaded for processing"
+      }
+    },
+    {
+      "timestamp": "2025-11-07T03:12:18.008229",
+      "stage": "UPLOAD BATCH",
+      "message": "Processing file 3/3",
+      "data": {}
+    },
+    {
+      "timestamp": "2025-11-07T03:12:18.008846",
+      "stage": "FILE SELECTED",
+      "message": "Preparing to upload: Digital Desk AWS WPR 06 - 12 feb.xlsx",
+      "data": {
+        "file_name": "Digital Desk AWS WPR 06 - 12 feb.xlsx",
+        "file_size": 240781,
+        "file_extension": ".xlsx",
+        "file_path": "C:\\Users\\Akki\\Downloads\\OneDrive_1_06-11-2025\\Digital Desk AWS WPR 06 - 12 feb.xlsx",
+        "last_modified": "2025-11-06T08:29:30.946017"
+      }
+    },
+    {
+      "timestamp": "2025-11-07T03:12:18.027584",
+      "stage": "FILE HASH",
+      "message": "Calculated SHA256 hash",
+      "data": {
+        "sha256": "8a81e328dccd5fa925c51967c58d664ce16f599edae7e91c45c2df44418a4d56",
+        "purpose": "Used for deduplication in database"
+      }
+    },
+    {
+      "timestamp": "2025-11-07T03:12:18.742748",
+      "stage": "API REQUEST PREP",
+      "message": "Preparing multipart form data",
+      "data": {
+        "endpoint": "http://localhost:8000/api/v1/documents/fileupload",
+        "method": "POST",
+        "headers": {
+          "Authorization": "Bearer ***"
+        },
+        "form_data": {
+          "search_space_id": 1,
+          "files": "Digital Desk AWS WPR 06 - 12 feb.xlsx"
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-07T03:12:18.746136",
+      "stage": "API CALL",
+      "message": "Sending POST request to backend",
+      "data": {}
+    },
+    {
+      "timestamp": "2025-11-07T03:12:19.008611",
+      "stage": "API RESPONSE",
+      "message": "Status: 200",
+      "data": {
+        "status_code": 200,
+        "reason": "OK",
+        "headers": {
+          "date": "Fri, 07 Nov 2025 11:12:18 GMT",
+          "server": "uvicorn",
+          "content-length": "43",
+          "content-type": "application/json"
+        },
+        "response_body": "{\"message\":\"Files uploaded for processing\"}"
+      }
+    },
+    {
+      "timestamp": "2025-11-07T03:12:19.009117",
+      "stage": "UPLOAD SUCCESS",
+      "message": "File accepted by API",
+      "data": {
+        "message": "Files uploaded for processing"
+      }
+    },
+    {
+      "timestamp": "2025-11-07T03:12:19.011125",
+      "stage": "CELERY CHECK",
+      "message": "Waiting 15 seconds for Celery task processing",
+      "data": {}
+    },
+    {
+      "timestamp": "2025-11-07T03:12:34.015672",
+      "stage": "CELERY LOGS",
+      "message": "Found 10 recent log entries",
+      "data": {
+        "log_count": 10,
+        "logs": [
+          {
+            "id": 79,
+            "message": "Docling parsing completed, creating document: WPR_CC_2022_7thFeb.xlsx",
+            "level": "INFO",
+            "created_at": "2025-11-06T17:15:59.593685+00:00"
+          },
+          {
+            "id": 78,
+            "message": "Successfully processed file with Docling: WPR_CC_2022_4thApril.xlsx",
+            "level": "INFO",
+            "created_at": "2025-11-06T17:12:55.509510+00:00"
+          },
+          {
+            "id": 77,
+            "message": "Successfully processed file with Docling: WPR_CC_2022_2ndMay.xlsx",
+            "level": "INFO",
+            "created_at": "2025-11-06T17:09:49.037537+00:00"
+          },
+          {
+            "id": 76,
+            "message": "Successfully processed file with Docling: WPR_CC_28Oct2022.xlsx",
+            "level": "INFO",
+            "created_at": "2025-11-06T17:06:38.296019+00:00"
+          },
+          {
+            "id": 75,
+            "message": "Successfully processed file with Docling: WPR_CC_21Oct2022.xlsx",
+            "level": "INFO",
+            "created_at": "2025-11-06T17:03:12.672446+00:00"
+          },
+          {
+            "id": 74,
+            "message": "Successfully processed file with Docling: Digital Desk AWS WPR.xlsx",
+            "level": "INFO",
+            "created_at": "2025-11-06T16:59:41.471629+00:00"
+          },
+          {
+            "id": 73,
+            "message": "Successfully processed file with Docling: Digital Desk AWS WPR 20 - 24 feb.xlsx",
+            "level": "INFO",
+            "created_at": "2025-11-06T16:56:21.577173+00:00"
+          },
+          {
+            "id": 72,
+            "message": "Successfully processed file with Docling: Digital Desk AWS WPR 13 feb - 19 feb.xlsx",
+            "level": "INFO",
+            "created_at": "2025-11-06T16:53:22.969127+00:00"
+          },
+          {
+            "id": 71,
+            "message": "Successfully processed file with Docling: Digital Desk AWS WPR 11 Dec.xlsx",
+            "level": "INFO",
+            "created_at": "2025-11-06T16:49:46.905906+00:00"
+          },
+          {
+            "id": 70,
+            "message": "Successfully processed file with Docling: Digital Desk AWS WPR 06 - 12 feb.xlsx",
+            "level": "INFO",
+            "created_at": "2025-11-06T16:46:03.913027+00:00"
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-07T03:12:34.018770",
+      "stage": "POST-UPLOAD DB CHECK",
+      "message": "Querying database for new documents",
+      "data": {}
+    },
+    {
+      "timestamp": "2025-11-07T03:12:34.040846",
+      "stage": "DATABASE VERIFICATION",
+      "message": "Document count changed: 24 \u2192 24",
+      "data": {
+        "before_count": 24,
+        "after_count": 24,
+        "new_documents": 0,
+        "recent_documents": [
+          {
+            "id": 56,
+            "title": "WPR_CC_2022_4thApril.xlsx",
+            "document_type": "FILE",
+            "created_at": "2025-11-06T17:15:58.797089+00:00",
+            "metadata": {
+              "FILE_NAME": "WPR_CC_2022_4thApril.xlsx",
+              "ETL_SERVICE": "DOCLING"
+            },
+            "content_preview": "# DOCUMENT METADATA\n**File Name:** WPR_CC_2022_4thApril.xlsx\n**Etl Service:** DOCLING\n**Document Type:** File Document\n\n# DOCUMENT SUMMARY\n\n **Comprehensive Document Summary**\n\nThe provided document i",
+            "has_embedding": true
+          },
+          {
+            "id": 55,
+            "title": "WPR_CC_2022_2ndMay.xlsx",
+            "document_type": "FILE",
+            "created_at": "2025-11-06T17:12:54.700509+00:00",
+            "metadata": {
+              "FILE_NAME": "WPR_CC_2022_2ndMay.xlsx",
+              "ETL_SERVICE": "DOCLING"
+            },
+            "content_preview": "# DOCUMENT METADATA\n**File Name:** WPR_CC_2022_2ndMay.xlsx\n**Etl Service:** DOCLING\n**Document Type:** File Document\n\n# DOCUMENT SUMMARY\n\n The provided document appears to be a project status report c",
+            "has_embedding": true
+          },
+          {
+            "id": 54,
+            "title": "WPR_CC_28Oct2022.xlsx",
+            "document_type": "FILE",
+            "created_at": "2025-11-06T17:09:48.174124+00:00",
+            "metadata": {
+              "FILE_NAME": "WPR_CC_28Oct2022.xlsx",
+              "ETL_SERVICE": "DOCLING"
+            },
+            "content_preview": "# DOCUMENT METADATA\n**File Name:** WPR_CC_28Oct2022.xlsx\n**Etl Service:** DOCLING\n**Document Type:** File Document\n\n# DOCUMENT SUMMARY\n\n The document summarized from \"WPR_CC_28Oct2022.xlsx\" provides a",
+            "has_embedding": true
+          },
+          {
+            "id": 53,
+            "title": "WPR_CC_21Oct2022.xlsx",
+            "document_type": "FILE",
+            "created_at": "2025-11-06T17:06:37.378230+00:00",
+            "metadata": {
+              "FILE_NAME": "WPR_CC_21Oct2022.xlsx",
+              "ETL_SERVICE": "DOCLING"
+            },
+            "content_preview": "# DOCUMENT METADATA\n**File Name:** WPR_CC_21Oct2022.xlsx\n**Etl Service:** DOCLING\n**Document Type:** File Document\n\n# DOCUMENT SUMMARY\n\n The comprehensive document summary integrates key points from t",
+            "has_embedding": true
+          },
+          {
+            "id": 52,
+            "title": "Digital Desk AWS WPR.xlsx",
+            "document_type": "FILE",
+            "created_at": "2025-11-06T17:03:11.771173+00:00",
+            "metadata": {
+              "FILE_NAME": "Digital Desk AWS WPR.xlsx",
+              "ETL_SERVICE": "DOCLING"
+            },
+            "content_preview": "# DOCUMENT METADATA\n**File Name:** Digital Desk AWS WPR.xlsx\n**Etl Service:** DOCLING\n**Document Type:** File Document\n\n# DOCUMENT SUMMARY\n\n Title: Comprehensive Summary of Digital Desk AWS Project St",
+            "has_embedding": true
+          },
+          {
+            "id": 51,
+            "title": "Digital Desk AWS WPR 20 - 24 feb.xlsx",
+            "document_type": "FILE",
+            "created_at": "2025-11-06T16:59:40.524879+00:00",
+            "metadata": {
+              "FILE_NAME": "Digital Desk AWS WPR 20 - 24 feb.xlsx",
+              "ETL_SERVICE": "DOCLING"
+            },
+            "content_preview": "# DOCUMENT METADATA\n**File Name:** Digital Desk AWS WPR 20 - 24 feb.xlsx\n**Etl Service:** DOCLING\n**Document Type:** File Document\n\n# DOCUMENT SUMMARY\n\n The Digital Desk AWS Project Status Report for ",
+            "has_embedding": true
+          },
+          {
+            "id": 50,
+            "title": "Digital Desk AWS WPR 13 feb - 19 feb.xlsx",
+            "document_type": "FILE",
+            "created_at": "2025-11-06T16:56:20.699558+00:00",
+            "metadata": {
+              "FILE_NAME": "Digital Desk AWS WPR 13 feb - 19 feb.xlsx",
+              "ETL_SERVICE": "DOCLING"
+            },
+            "content_preview": "# DOCUMENT METADATA\n**File Name:** Digital Desk AWS WPR 13 feb - 19 feb.xlsx\n**Etl Service:** DOCLING\n**Document Type:** File Document\n\n# DOCUMENT SUMMARY\n\n Title: Comprehensive Summary of Digital Des",
+            "has_embedding": true
+          },
+          {
+            "id": 49,
+            "title": "Digital Desk AWS WPR 11 Dec.xlsx",
+            "document_type": "FILE",
+            "created_at": "2025-11-06T16:53:22.045153+00:00",
+            "metadata": {
+              "FILE_NAME": "Digital Desk AWS WPR 11 Dec.xlsx",
+              "ETL_SERVICE": "DOCLING"
+            },
+            "content_preview": "# DOCUMENT METADATA\n**File Name:** Digital Desk AWS WPR 11 Dec.xlsx\n**Etl Service:** DOCLING\n**Document Type:** File Document\n\n# DOCUMENT SUMMARY\n\n The provided document is a project status report for",
+            "has_embedding": true
+          },
+          {
+            "id": 48,
+            "title": "Digital Desk AWS WPR 06 - 12 feb.xlsx",
+            "document_type": "FILE",
+            "created_at": "2025-11-06T16:49:44.442196+00:00",
+            "metadata": {
+              "FILE_NAME": "Digital Desk AWS WPR 06 - 12 feb.xlsx",
+              "ETL_SERVICE": "DOCLING"
+            },
+            "content_preview": "# DOCUMENT METADATA\n**File Name:** Digital Desk AWS WPR 06 - 12 feb.xlsx\n**Etl Service:** DOCLING\n**Document Type:** File Document\n\n# DOCUMENT SUMMARY\n\n Title: Comprehensive Summary of Digital Desk AW",
+            "has_embedding": true
+          },
+          {
+            "id": 47,
+            "title": "Dec-PSDL-HR-F17-WPR_HR.xlsx",
+            "document_type": "FILE",
+            "created_at": "2025-11-06T16:46:03.302815+00:00",
+            "metadata": {
+              "FILE_NAME": "Dec-PSDL-HR-F17-WPR_HR.xlsx",
+              "ETL_SERVICE": "DOCLING"
+            },
+            "content_preview": "# DOCUMENT METADATA\n**File Name:** Dec-PSDL-HR-F17-WPR_HR.xlsx\n**Etl Service:** DOCLING\n**Document Type:** File Document\n\n# DOCUMENT SUMMARY\n\n The provided data appears to be a report or table that in",
+            "has_embedding": true
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-07T03:12:34.045745",
+      "stage": "AUDIT COMPLETE",
+      "message": "Upload audit finished",
+      "data": {
+        "total_files": 3,
+        "successful_uploads": 3,
+        "failed_uploads": 0,
+        "new_documents_in_db": 0,
+        "discrepancy": 3,
+        "possible_issues": [
+          "Celery worker not running",
+          "Duplicate files rejected",
+          "Processing still in progress"
+        ]
+      }
+    }
+  ],
+  "upload_results": [
+    {
+      "success": true,
+      "file": "Dec-PSDL-HR-F17-WPR_HR - Copy.xlsx",
+      "response": {
+        "message": "Files uploaded for processing"
+      }
+    },
+    {
+      "success": true,
+      "file": "Dec-PSDL-HR-F17-WPR_HR.xlsx",
+      "response": {
+        "message": "Files uploaded for processing"
+      }
+    },
+    {
+      "success": true,
+      "file": "Digital Desk AWS WPR 06 - 12 feb.xlsx",
+      "response": {
+        "message": "Files uploaded for processing"
+      }
+    }
+  ],
+  "summary": {
+    "total_files": 3,
+    "successful": 3,
+    "failed": 0,
+    "new_documents": 0
+  }
+}
