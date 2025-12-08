@@ -149,7 +149,7 @@ test.describe("Primus IDP Browser Extension Integration", () => {
 
         const extensionDir = path.join(
             __dirname,
-            "../../surfsense_browser_extension/build/chrome-mv3-prod"
+            "../../primus_idp_browser_extension/build/chrome-mv3-prod"
         );
 
         // Check if production build exists (may not exist in dev)

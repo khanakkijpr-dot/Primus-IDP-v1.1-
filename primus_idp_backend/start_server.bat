@@ -1,0 +1,6 @@
+@echo off
+cd /d "c:\Users\Akki\Primus IDP\primus_idp_backend"
+echo Starting Primus IDP Backend...
+echo This may take 30-60 seconds to load models...
+python main.py
+pause

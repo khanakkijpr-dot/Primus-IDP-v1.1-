@@ -75,17 +75,17 @@ Ctrl+Shift+P → "Run Task" → "Primus: QA Automation Pipeline"
 # Check service status
 Test-NetConnection -ComputerName localhost -Port 8000  # Backend
 Test-NetConnection -ComputerName localhost -Port 8001  # Frontend
-docker ps | Select-String "surfsense"                  # Database + Redis
+docker ps | Select-String "primus-idp"                  # Database + Redis
 
 # Start services if needed
-docker start surfsense-db-1
-cd surfsense_backend && python main.py --reload &
-cd surfsense_web && npm run dev &
+docker start primus-idp-db-1
+cd primus_idp_backend && python main.py --reload &
+cd primus_idp_web && npm run dev &
 ```
 
 ### Environment Variables
-- Backend: `surfsense_backend/.env` (database, Redis, LLM configs)
-- Frontend: `surfsense_web/.env` (API URL, auth settings)
+- Backend: `primus_idp_backend/.env` (database, Redis, LLM configs)
+- Frontend: `primus_idp_web/.env` (API URL, auth settings)
 
 ---
 
@@ -117,7 +117,7 @@ npx playwright test tests/e2e/primus-idp-smoke.spec.ts --headed --timeout=60000
 ### 4. Check Backend/Frontend Logs
 ```powershell
 # Backend logs
-cd surfsense_backend && tail -f logs/uvicorn.log
+cd primus_idp_backend && tail -f logs/uvicorn.log
 
 # Frontend logs (in terminal where `npm run dev` is running)
 ```
@@ -183,8 +183,8 @@ taskkill /PID {process_id} /F
 ### Issue: Database Connection Failed
 ```powershell
 # Solution: Start Docker containers
-docker start surfsense-db-1
-docker start surfsense-redis-1
+docker start primus-idp-db-1
+docker start primus-idp-redis-1
 ```
 
 ### Issue: Tests Timeout
@@ -259,13 +259,13 @@ Location: `.vscode/tasks.json`
 ## Key Contacts & Resources
 
 - **Documentation**: https://www.primusidp.net/docs/
-- **GitHub**: https://github.com/MODSetter/SurfSense
+- **GitHub**: https://github.com/khanakkijpr-dot/Primus-IDP
 - **Discord**: https://discord.gg/ejRNvftDp9
 - **Issues**: https://github.com/users/MODSetter/projects/2
 
 ---
 
-**Last Updated**: 2025-11-06  
+**Last Updated**: 2025-11-30  
 **Test Framework**: Playwright v1.49.0  
 **Browser**: Chromium 141.0.7390.37  
 **Pass Rate**: 100% E2E, 88.89% API

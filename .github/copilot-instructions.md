@@ -7,19 +7,19 @@ Primus IDP is a self-hosted AI research assistant with Retrieval-Augmented Gener
 
 ### Port Configuration
 - **All services MUST use ports 8000-8999**:
-  - Backend: 8000 (`UVICORN_PORT` in `surfsense_backend/app/config/uvicorn.py`)
-  - Frontend: 8001 (`NEXT_PUBLIC_FASTAPI_BACKEND_URL` in `surfsense_web/.env`)
+  - Backend: 8000 (`UVICORN_PORT` in `primus_idp_backend/app/config/uvicorn.py`)
+  - Frontend: 8001 (`NEXT_PUBLIC_FASTAPI_BACKEND_URL` in `primus_idp_web/.env`)
   - Database: 5432 (Docker), Redis: 6379, pgAdmin: 5050
 
 ### Multi-Service Stack
 ```
-surfsense_backend/      # FastAPI + Celery workers + LangGraph agents
-surfsense_web/          # Next.js + React + TypeScript
-surfsense_browser_extension/  # Plasmo framework (Manifest v3)
+primus_idp_backend/      # FastAPI + Celery workers + LangGraph agents
+primus_idp_web/          # Next.js + React + TypeScript
+primus_idp_browser_extension/  # Plasmo framework (Manifest v3)
 ```
 
 ### LangGraph Agent Architecture
-- **Agents live in**: `surfsense_backend/app/agents/{podcaster,researcher}/`
+- **Agents live in**: `primus_idp_backend/app/agents/{podcaster,researcher}/`
 - **Structure**: Each agent has `graph.py` (StateGraph), `nodes.py` (node functions), `state.py` (TypedDict state), `configuration.py`
 - **Researcher agent**: Conditional routing based on `ResearchMode` (QNA vs full report). Sub-agents in `qna_agent/`
 - **Streaming**: Agents stream via `astream()` with updates yielded to the frontend
@@ -31,25 +31,25 @@ surfsense_browser_extension/  # Plasmo framework (Manifest v3)
 - **User isolation**: Filter queries by `user_id`
 
 ### Frontend API Integration
-- **API client**: `surfsense_web/lib/api.ts` (`fetchWithAuth()` and `apiClient`)
-- **React hooks**: API calls in `surfsense_web/hooks/use-*.ts`
+- **API client**: `primus_idp_web/lib/api.ts` (`fetchWithAuth()` and `apiClient`)
+- **React hooks**: API calls in `primus_idp_web/hooks/use-*.ts`
 - **Streaming chat**: Vercel AI SDK's `useChat()` hook
 
 ### RAG & Embeddings Pipeline
-- **Chunking**: `RecursiveChunker` and `CodeChunker` in `surfsense_backend/app/config/__init__.py`
+- **Chunking**: `RecursiveChunker` and `CodeChunker` in `primus_idp_backend/app/config/__init__.py`
 - **Embeddings**: `AutoEmbeddings.get_embeddings(EMBEDDING_MODEL)`
 - **Hybrid search**: Vector similarity + full-text search (`documents_hybrid_search.py`)
 - **Rerankers**: Configured via `RERANKERS_MODEL_NAME` and `RERANKERS_MODEL_TYPE`
 
 ### Celery Task System
-- **Worker startup**: `surfsense_backend/celery_worker.py`
-- **Task definitions**: `surfsense_backend/app/tasks/celery_tasks/*_tasks.py`
+- **Worker startup**: `primus_idp_backend/celery_worker.py`
+- **Task definitions**: `primus_idp_backend/app/tasks/celery_tasks/*_tasks.py`
 - **Connector indexing**: `app/tasks/connector_indexers/{connector}_indexer.py`
 - **Document processing**: `app/tasks/document_processors/file_processors.py`
 
 ### Database Migrations
-- **Alembic**: Migrations in `surfsense_backend/alembic/versions/*.py`
-- **Run migrations**: `cd surfsense_backend && alembic upgrade head`
+- **Alembic**: Migrations in `primus_idp_backend/alembic/versions/*.py`
+- **Run migrations**: `cd primus_idp_backend && alembic upgrade head`
 - **Generate migration**: `alembic revision --autogenerate -m "description"`
 
 ## Development Workflow
@@ -57,14 +57,14 @@ surfsense_browser_extension/  # Plasmo framework (Manifest v3)
 ### Starting Services
 ```powershell
 # 1. Start database
-docker start surfsense-db-1
+docker start primus-idp-db-1
 
 # 2. Start backend
-cd surfsense_backend
-& c:\Users\Akki\SurfSense\.venv\Scripts\python.exe main.py --reload
+cd primus_idp_backend
+& c:\Users\Akki\PrimusIDP\.venv\Scripts\python.exe main.py --reload
 
 # 3. Start frontend
-cd surfsense_web
+cd primus_idp_web
 npm run dev
 
 # 4. (Optional) Start Celery worker
@@ -84,7 +84,7 @@ celery -A app.celery_app worker --loglevel=info --concurrency=1 --pool=solo
 ## Critical Code Patterns
 
 ### Adding a New Backend Route
-1. Create route file: `surfsense_backend/app/routes/new_feature_routes.py`
+1. Create route file: `primus_idp_backend/app/routes/new_feature_routes.py`
 2. Define router: `router = APIRouter()`
 3. Include in app: Add to `app/app.py`
 4. Use dependencies: `user: User = Depends(current_active_user)`
@@ -103,17 +103,17 @@ celery -A app.celery_app worker --loglevel=info --concurrency=1 --pool=solo
 - **Verify**: Backend accessible at `http://localhost:8000/docs`
 
 ### Database Connection Errors
-- **Ensure**: Docker container `surfsense-db-1` is running
-- **Start**: `docker start surfsense-db-1`
+- **Ensure**: Docker container `primus-idp-db-1` is running
+- **Start**: `docker start primus-idp-db-1`
 
 ### Celery Tasks Not Processing
 - **Worker running?**: Check with `celery -A app.celery_app inspect active`
 - **Redis connection**: Verify `CELERY_BROKER_URL`
 
 ## Key Files Reference
-- Backend config: `surfsense_backend/app/config/__init__.py`
-- Frontend API client: `surfsense_web/lib/api.ts`
-- Agent graphs: `surfsense_backend/app/agents/*/graph.py`
+- Backend config: `primus_idp_backend/app/config/__init__.py`
+- Frontend API client: `primus_idp_web/lib/api.ts`
+- Agent graphs: `primus_idp_backend/app/agents/*/graph.py`
 
 ## External Documentation
 - [Installation Guide](https://www.primusidp.net/docs/)
