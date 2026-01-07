@@ -7,7 +7,7 @@ Hey! 👋 Thanks for checking out **Primus IDP**. We're stoked that you're inter
 **Join Our Discord**  
 Want to stay in the loop, ask questions, or get feedback before starting something?  
 Hop into the official Primus IDP community:  
-👉 [https://discord.gg/ejRNvftDp9](https://discord.gg/ejRNvftDp9)
+👉 [#](#)
 
 That's where the *latest updates*, *internal discussions*, and *collaborations* happen.
 
@@ -147,7 +147,7 @@ Stuck? Need clarification? Here's how to get help:
 
 1. **Check existing issues** - your question might already be answered
 2. **Search the docs** - [https://www.Primus IDP.net/docs/](https://www.Primus IDP.net/docs/)
-3. **Ask in Discord** - [https://discord.gg/ejRNvftDp9](https://discord.gg/ejRNvftDp9)
+3. **Ask in Discord** - [#](#)
 4. **Create an issue** - if it's a bug or feature request
 
 ## ⭐ Other Ways to Contribute

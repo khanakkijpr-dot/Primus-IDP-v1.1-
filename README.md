@@ -3,9 +3,7 @@
 
 
 <div align="center">
-<a href="https://discord.gg/ejRNvftDp9">
-<img src="https://img.shields.io/discord/1359368468260192417" alt="Discord">
-</a>
+<!-- Discord badge - Add your own -->
 </div>
 
 
@@ -16,12 +14,12 @@ While tools like NotebookLM and Perplexity are impressive and highly effective f
 # Video 
 
 
-https://github.com/user-attachments/assets/d9221908-e0de-4b2f-ac3a-691cf4b202da
+<!-- Video/Image placeholder - Add your own demo -->
 
 
 ## Podcast Sample
 
-https://github.com/user-attachments/assets/a0a16566-6967-4374-ac51-9b3e07fbecd7
+<!-- Video/Image placeholder - Add your own demo -->
 
 
 
@@ -123,7 +121,7 @@ Open source and easy to deploy locally.
 
 **Primus IDP is actively being developed.** While it's not yet production-ready, you can help us speed up the process.
 
-Join the [Primus IDP Discord](https://discord.gg/ejRNvftDp9) and help shape the future of Primus IDP!
+Join the [Primus IDP Community](#) and help shape the future of Primus IDP!
 
 ## 🚀 Roadmap
 
@@ -161,28 +159,28 @@ Before installation, make sure to complete the [prerequisite setup steps](https:
 
 **Research Agent** 
 
-![updated_researcher](https://github.com/user-attachments/assets/e22c5d86-f511-4c72-8c50-feba0c1561b4)
+![updated_researcher](<!-- Video/Image placeholder - Add your own demo -->)
 
 **Search Spaces** 
 
-![search_spaces](https://github.com/user-attachments/assets/e254c38c-f937-44b6-9e9d-770db583d099)
+![search_spaces](<!-- Video/Image placeholder - Add your own demo -->)
 
 **Manage Documents** 
-![documents](https://github.com/user-attachments/assets/7001e306-eb06-4009-89c6-8fadfdc3fc4d)
+![documents](<!-- Video/Image placeholder - Add your own demo -->)
 
 **Podcast Agent** 
-![podcasts](https://github.com/user-attachments/assets/6cb82ffd-9e14-4172-bc79-67faf34c4c1c)
+![podcasts](<!-- Video/Image placeholder - Add your own demo -->)
 
 
 **Agent Chat** 
 
-![git_chat](https://github.com/user-attachments/assets/bb352d52-1c6d-4020-926b-722d0b98b491)
+![git_chat](<!-- Video/Image placeholder - Add your own demo -->)
 
 **Browser Extension**
 
-![ext1](https://github.com/user-attachments/assets/1f042b7a-6349-422b-94fb-d40d0df16c40)
+![ext1](<!-- Video/Image placeholder - Add your own demo -->)
 
-![ext2](https://github.com/user-attachments/assets/a9b9f1aa-2677-404d-b0a0-c1b2dddf24a7)
+![ext2](<!-- Video/Image placeholder - Add your own demo -->)
 
 
 ## Tech Stack
@@ -281,7 +279,7 @@ For detailed contribution guidelines, please see our [CONTRIBUTING.md](CONTRIBUT
 ---
 <p align="center">
     <img 
-      src="https://github.com/user-attachments/assets/329c9bc2-6005-4aed-a629-700b5ae296b4" 
+      src="<!-- Video/Image placeholder - Add your own demo -->" 
       alt="Catalyst Project" 
       width="200"
     />
@@ -289,5 +287,7 @@ For detailed contribution guidelines, please see our [CONTRIBUTING.md](CONTRIBUT
 
 ---
 ---
+
+
 
 
