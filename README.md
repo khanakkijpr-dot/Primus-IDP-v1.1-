@@ -1,5 +1,5 @@
 
-![new_header](https://github.com/user-attachments/assets/e236b764-0ddc-42ff-a1f1-8fbb3d2e0e65)
+# 🧠 Primus IDP
 
 
 <div align="center">
@@ -289,4 +289,5 @@ For detailed contribution guidelines, please see our [CONTRIBUTING.md](CONTRIBUT
 
 ---
 ---
+
 
