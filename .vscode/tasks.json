@@ -1,0 +1,24 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build and Run Primus IDP",
+			"type": "shell",
+			"command": "pwsh",
+			"args": [
+				"docker start primus-idp-db-1",
+				"cd 'c:\\Users\\Akki\\Primus IDP\\primus_idp_backend'; & c:\\Users\\Akki\\PrimusIDP\\.venv\\Scripts\\python.exe main.py --reload",
+				"cd 'c:\\Users\\Akki\\Primus IDP\\primus_idp_web'; npm run dev"
+			],
+			"isBackground": true,
+			"group": "build"
+		},
+		{
+			"label": "Start Backend Server",
+			"type": "shell",
+			"command": "cd c:\\Users\\Akki\\Primus` IDP\\primus_idp_backend; python -m uvicorn app.app:app --host 0.0.0.0 --port 8000",
+			"isBackground": true,
+			"problemMatcher": []
+		}
+	]
+}

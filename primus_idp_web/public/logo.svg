@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="primaryGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a855f7;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="64" cy="64" r="60" fill="url(#primaryGradient)" />
+  
+  <!-- Inner glow ring -->
+  <circle cx="64" cy="64" r="52" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+  
+  <!-- Stylized "P" letter representing Primus -->
+  <g transform="translate(32, 24)">
+    <!-- Main P stem -->
+    <rect x="8" y="8" width="12" height="72" rx="6" fill="white"/>
+    
+    <!-- P curve top -->
+    <path d="M14 8 H44 C58 8 64 20 64 32 C64 44 58 56 44 56 H14" 
+          fill="none" 
+          stroke="white" 
+          stroke-width="12" 
+          stroke-linecap="round"
+          stroke-linejoin="round"/>
+  </g>
+  
+  <!-- Data/Knowledge dots representing IDP -->
+  <g filter="url(#glow)">
+    <circle cx="90" cy="36" r="5" fill="url(#accentGradient)"/>
+    <circle cx="100" cy="50" r="4" fill="url(#accentGradient)"/>
+    <circle cx="96" cy="66" r="3" fill="url(#accentGradient)"/>
+  </g>
+  
+  <!-- Connection lines representing data flow -->
+  <g stroke="url(#accentGradient)" stroke-width="1.5" fill="none" opacity="0.6">
+    <path d="M76 32 Q83 34 85 36"/>
+    <path d="M76 44 Q88 47 95 50"/>
+    <path d="M76 56 Q86 61 93 66"/>
+  </g>
+</svg>
