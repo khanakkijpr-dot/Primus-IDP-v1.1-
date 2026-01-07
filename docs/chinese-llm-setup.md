@@ -308,7 +308,7 @@ docker compose logs backend | grep -i "error"
 如果遇到问题，可以通过以下方式获取帮助：
 
 - 💬 [GitHub Issues](https://github.com/khanakkijpr-dot/Primus-IDP/issues)
-- 💬 [Discord Community](https://discord.gg/ejRNvftDp9)
+- 💬 [Discord Community](https://discord.gg/YOUR_DISCORD_ID)
 - 📧 Email: akki@primussoft.com
 
 ---

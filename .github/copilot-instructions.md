@@ -118,4 +118,4 @@ celery -A app.celery_app worker --loglevel=info --concurrency=1 --pool=solo
 ## External Documentation
 - [Installation Guide](https://www.primusidp.net/docs/)
 - [GitHub Roadmap](https://github.com/users/khanakkijpr-dot/projects/2)
-- [Discord Community](https://discord.gg/ejRNvftDp9)
+- [Discord Community](https://discord.gg/YOUR_DISCORD_ID)
