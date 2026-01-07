@@ -274,7 +274,7 @@ const SocialLinks = () => {
 	return (
 		<div className="flex gap-2">
 			<Link
-				href="https://discord.gg/ejRNvftDp9"
+				href="https://discord.gg/YOUR_DISCORD_ID"
 				target="_blank"
 				rel="noopener noreferrer"
 				className="flex-1 group relative flex items-center justify-center gap-2 py-3 rounded-xl bg-zinc-800/50 border border-zinc-700/50 hover:border-indigo-500/30 hover:bg-indigo-500/10 transition-all"

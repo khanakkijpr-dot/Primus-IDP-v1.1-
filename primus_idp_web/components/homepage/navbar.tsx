@@ -75,7 +75,7 @@ const DesktopNav = ({ navItems, isScrolled }: any) => {
 			</div>
 			<div className="flex items-center gap-2">
 				<Link
-					href="https://discord.gg/ejRNvftDp9"
+					href="https://discord.gg/YOUR_DISCORD_ID"
 					target="_blank"
 					rel="noopener noreferrer"
 					className="hidden rounded-lg p-2 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors md:flex items-center justify-center"
@@ -165,7 +165,7 @@ const MobileNav = ({ navItems, isScrolled }: any) => {
 							<div className="w-full h-px bg-zinc-200 dark:bg-zinc-800 my-2" />
 							<div className="flex w-full items-center gap-2">
 								<Link
-									href="https://discord.gg/ejRNvftDp9"
+									href="https://discord.gg/YOUR_DISCORD_ID"
 									target="_blank"
 									rel="noopener noreferrer"
 									className="flex items-center justify-center rounded-lg p-2 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors touch-manipulation"
